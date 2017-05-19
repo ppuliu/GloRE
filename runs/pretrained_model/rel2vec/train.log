@@ -1,0 +1,740 @@
+2017-02-09 03:15:07,991 - __main__ - INFO - Preparing data in data/nyt_data_random_split
+2017-02-09 03:15:07,992 - data_utils - INFO - Vocabulary already exists. Skip creating.
+2017-02-09 03:15:08,055 - data_utils - INFO - Finished vocabulary creation.
+2017-02-09 03:15:08,055 - __main__ - INFO - Reading data from data/nyt_data_random_split/ids.left20000.right-1.train.gz
+2017-02-09 03:15:08,056 - __main__ - DEBUG - Read line 0
+2017-02-09 03:15:09,322 - __main__ - DEBUG - Read line 100000
+2017-02-09 03:15:10,686 - __main__ - DEBUG - Read line 200000
+2017-02-09 03:15:11,915 - __main__ - DEBUG - Read line 299999
+2017-02-09 03:15:11,915 - __main__ - INFO - Reading data from data/nyt_data_random_split/ids.left20000.right-1.valid.gz
+2017-02-09 03:15:11,915 - __main__ - DEBUG - Read line 0
+2017-02-09 03:15:12,736 - __main__ - DEBUG - Read line 59999
+2017-02-09 03:15:12,736 - __main__ - INFO - Reading data from data/nyt_data_random_split/ids.left20000.right-1.test.gz
+2017-02-09 03:15:12,736 - __main__ - DEBUG - Read line 0
+2017-02-09 03:15:12,736 - __main__ - INFO - Data processed. 300000 train examples, 60000 validation examples, 0 test examples. encoder vocab size = 20000, decoder vocab size = 55, encoder size = 227, decoder size = 3.
+2017-02-09 03:15:14,057 - data_utils - INFO - Loading word2vec initial vectors from:
+ data/nyt_data_random_split/left.20000.word2vec.vocab.npy
+2017-02-09 03:15:14,073 - __main__ - INFO - Creating 1 layers of 300 units.
+2017-02-09 03:15:14,091 - seq2seq_model_regression - INFO - Initialize with given encoder embeddings
+2017-02-09 03:15:14,091 - seq2seq_model_regression - INFO - Initialize with given decoder embeddings
+2017-02-09 03:15:14,512 - seq2seq_model_regression - INFO - creating basic_rnn_seq2seq
+2017-02-09 03:15:59,055 - __main__ - INFO - Created model with fresh parameters.
+2017-02-09 03:17:37,789 - __main__ - INFO - global step 300 learning rate 0.5000 step-time 0.1567 perplexity 3.5887 gradient norm 1.1059
+2017-02-09 03:17:44,112 - __main__ - INFO - ==validation: perplexity 3.3709 # samples 60000 
+2017-02-09 03:18:24,926 - __main__ - INFO - model saved on step: 300 
+2017-02-09 03:19:08,672 - __main__ - INFO - global step 600 learning rate 0.5000 step-time 0.1456 perplexity 3.2223 gradient norm 0.9931
+2017-02-09 03:19:13,277 - __main__ - INFO - ==validation: perplexity 3.2133 # samples 60000 
+2017-02-09 03:19:52,974 - __main__ - INFO - model saved on step: 600 
+2017-02-09 03:20:35,566 - __main__ - INFO - global step 900 learning rate 0.5000 step-time 0.1417 perplexity 3.0930 gradient norm 0.9677
+2017-02-09 03:20:41,794 - __main__ - INFO - ==validation: perplexity 3.0435 # samples 60000 
+2017-02-09 03:21:25,380 - __main__ - INFO - model saved on step: 900 
+2017-02-09 03:22:09,702 - __main__ - INFO - global step 1200 learning rate 0.5000 step-time 0.1476 perplexity 2.9541 gradient norm 0.9447
+2017-02-09 03:22:14,455 - __main__ - INFO - ==validation: perplexity 2.9867 # samples 60000 
+2017-02-09 03:22:57,796 - __main__ - INFO - model saved on step: 1200 
+2017-02-09 03:23:42,265 - __main__ - INFO - global step 1500 learning rate 0.5000 step-time 0.1480 perplexity 2.8975 gradient norm 0.9939
+2017-02-09 03:23:47,609 - __main__ - INFO - ==validation: perplexity 2.8665 # samples 60000 
+2017-02-09 03:24:27,790 - __main__ - INFO - model saved on step: 1500 
+2017-02-09 03:25:11,204 - __main__ - INFO - global step 1800 learning rate 0.5000 step-time 0.1444 perplexity 2.8698 gradient norm 0.9915
+2017-02-09 03:25:18,865 - __main__ - INFO - ==validation: perplexity 2.8544 # samples 60000 
+2017-02-09 03:26:01,585 - __main__ - INFO - model saved on step: 1800 
+2017-02-09 03:26:45,351 - __main__ - INFO - global step 2100 learning rate 0.5000 step-time 0.1456 perplexity 2.7492 gradient norm 1.0176
+2017-02-09 03:26:50,537 - __main__ - INFO - ==validation: perplexity 2.7891 # samples 60000 
+2017-02-09 03:27:31,800 - __main__ - INFO - model saved on step: 2100 
+2017-02-09 03:28:14,562 - __main__ - INFO - global step 2400 learning rate 0.5000 step-time 0.1423 perplexity 2.6741 gradient norm 0.9743
+2017-02-09 03:28:21,046 - __main__ - INFO - ==validation: perplexity 2.7418 # samples 60000 
+2017-02-09 03:29:02,396 - __main__ - INFO - model saved on step: 2400 
+2017-02-09 03:29:45,660 - __main__ - INFO - global step 2700 learning rate 0.5000 step-time 0.1440 perplexity 2.6476 gradient norm 0.9927
+2017-02-09 03:29:50,618 - __main__ - INFO - ==validation: perplexity 2.6857 # samples 60000 
+2017-02-09 03:30:33,900 - __main__ - INFO - model saved on step: 2700 
+2017-02-09 03:31:16,765 - __main__ - INFO - global step 3000 learning rate 0.5000 step-time 0.1426 perplexity 2.5914 gradient norm 0.9883
+2017-02-09 03:31:22,086 - __main__ - INFO - ==validation: perplexity 2.6064 # samples 60000 
+2017-02-09 03:32:08,028 - __main__ - INFO - model saved on step: 3000 
+2017-02-09 03:32:51,517 - __main__ - INFO - global step 3300 learning rate 0.5000 step-time 0.1446 perplexity 2.5178 gradient norm 1.0171
+2017-02-09 03:32:56,891 - __main__ - INFO - ==validation: perplexity 2.5572 # samples 60000 
+2017-02-09 03:33:42,032 - __main__ - INFO - model saved on step: 3300 
+2017-02-09 03:34:26,364 - __main__ - INFO - global step 3600 learning rate 0.5000 step-time 0.1474 perplexity 2.4948 gradient norm 1.0189
+2017-02-09 03:34:32,400 - __main__ - INFO - ==validation: perplexity 2.5311 # samples 60000 
+2017-02-09 03:35:15,161 - __main__ - INFO - model saved on step: 3600 
+2017-02-09 03:35:58,998 - __main__ - INFO - global step 3900 learning rate 0.5000 step-time 0.1459 perplexity 2.4473 gradient norm 1.0562
+2017-02-09 03:36:04,210 - __main__ - INFO - ==validation: perplexity 2.4844 # samples 60000 
+2017-02-09 03:36:44,413 - __main__ - INFO - model saved on step: 3900 
+2017-02-09 03:37:27,967 - __main__ - INFO - global step 4200 learning rate 0.5000 step-time 0.1450 perplexity 2.4118 gradient norm 1.0304
+2017-02-09 03:37:32,549 - __main__ - INFO - ==validation: perplexity 2.4259 # samples 60000 
+2017-02-09 03:38:16,038 - __main__ - INFO - model saved on step: 4200 
+2017-02-09 03:38:58,780 - __main__ - INFO - global step 4500 learning rate 0.5000 step-time 0.1423 perplexity 2.3516 gradient norm 1.0427
+2017-02-09 03:39:03,462 - __main__ - INFO - ==validation: perplexity 2.3930 # samples 60000 
+2017-02-09 03:39:46,655 - __main__ - INFO - model saved on step: 4500 
+2017-02-09 03:40:29,069 - __main__ - INFO - global step 4800 learning rate 0.5000 step-time 0.1412 perplexity 2.3232 gradient norm 1.0261
+2017-02-09 03:40:33,937 - __main__ - INFO - ==validation: perplexity 2.3568 # samples 60000 
+2017-02-09 03:41:12,823 - __main__ - INFO - model saved on step: 4800 
+2017-02-09 03:41:55,332 - __main__ - INFO - global step 5100 learning rate 0.5000 step-time 0.1414 perplexity 2.2819 gradient norm 1.0547
+2017-02-09 03:42:01,357 - __main__ - INFO - ==validation: perplexity 2.3412 # samples 60000 
+2017-02-09 03:42:42,167 - __main__ - INFO - model saved on step: 5100 
+2017-02-09 03:43:24,014 - __main__ - INFO - global step 5400 learning rate 0.5000 step-time 0.1393 perplexity 2.2349 gradient norm 1.0508
+2017-02-09 03:43:28,487 - __main__ - INFO - ==validation: perplexity 2.2859 # samples 60000 
+2017-02-09 03:44:11,422 - __main__ - INFO - model saved on step: 5400 
+2017-02-09 03:44:53,103 - __main__ - INFO - global step 5700 learning rate 0.5000 step-time 0.1386 perplexity 2.1848 gradient norm 1.0674
+2017-02-09 03:44:58,691 - __main__ - INFO - ==validation: perplexity 2.2804 # samples 60000 
+2017-02-09 03:45:42,794 - __main__ - INFO - model saved on step: 5700 
+2017-02-09 03:46:24,930 - __main__ - INFO - global step 6000 learning rate 0.5000 step-time 0.1402 perplexity 2.1798 gradient norm 1.0756
+2017-02-09 03:46:30,131 - __main__ - INFO - ==validation: perplexity 2.2436 # samples 60000 
+2017-02-09 03:47:08,708 - __main__ - INFO - model saved on step: 6000 
+2017-02-09 03:47:50,334 - __main__ - INFO - global step 6300 learning rate 0.5000 step-time 0.1386 perplexity 2.1533 gradient norm 1.0697
+2017-02-09 03:47:55,573 - __main__ - INFO - ==validation: perplexity 2.2103 # samples 60000 
+2017-02-09 03:48:40,291 - __main__ - INFO - model saved on step: 6300 
+2017-02-09 03:49:22,889 - __main__ - INFO - global step 6600 learning rate 0.5000 step-time 0.1417 perplexity 2.1331 gradient norm 1.0954
+2017-02-09 03:49:28,015 - __main__ - INFO - ==validation: perplexity 2.1668 # samples 60000 
+2017-02-09 03:50:16,790 - __main__ - INFO - model saved on step: 6600 
+2017-02-09 03:50:59,177 - __main__ - INFO - global step 6900 learning rate 0.5000 step-time 0.1411 perplexity 2.0995 gradient norm 1.1147
+2017-02-09 03:51:03,693 - __main__ - INFO - ==validation: perplexity 2.1591 # samples 60000 
+2017-02-09 03:51:46,957 - __main__ - INFO - model saved on step: 6900 
+2017-02-09 03:52:27,551 - __main__ - INFO - global step 7200 learning rate 0.5000 step-time 0.1350 perplexity 2.0544 gradient norm 1.1137
+2017-02-09 03:52:33,566 - __main__ - INFO - ==validation: perplexity 2.1281 # samples 60000 
+2017-02-09 03:53:16,996 - __main__ - INFO - model saved on step: 7200 
+2017-02-09 03:53:59,106 - __main__ - INFO - global step 7500 learning rate 0.5000 step-time 0.1401 perplexity 2.0252 gradient norm 1.0720
+2017-02-09 03:54:03,930 - __main__ - INFO - ==validation: perplexity 2.1087 # samples 60000 
+2017-02-09 03:54:50,411 - __main__ - INFO - model saved on step: 7500 
+2017-02-09 03:55:33,545 - __main__ - INFO - global step 7800 learning rate 0.5000 step-time 0.1433 perplexity 2.0043 gradient norm 1.1085
+2017-02-09 03:55:38,636 - __main__ - INFO - ==validation: perplexity 2.0739 # samples 60000 
+2017-02-09 03:56:21,824 - __main__ - INFO - model saved on step: 7800 
+2017-02-09 03:57:04,304 - __main__ - INFO - global step 8100 learning rate 0.5000 step-time 0.1414 perplexity 1.9697 gradient norm 1.0884
+2017-02-09 03:57:09,613 - __main__ - INFO - ==validation: perplexity 2.0912 # samples 60000 
+2017-02-09 03:57:52,569 - __main__ - INFO - global step 8400 learning rate 0.5000 step-time 0.1430 perplexity 1.9534 gradient norm 1.1183
+2017-02-09 03:57:57,585 - __main__ - INFO - ==validation: perplexity 2.0440 # samples 60000 
+2017-02-09 03:58:44,659 - __main__ - INFO - model saved on step: 8400 
+2017-02-09 03:59:28,182 - __main__ - INFO - global step 8700 learning rate 0.5000 step-time 0.1448 perplexity 1.9303 gradient norm 1.0961
+2017-02-09 03:59:33,159 - __main__ - INFO - ==validation: perplexity 2.0164 # samples 60000 
+2017-02-09 04:00:18,179 - __main__ - INFO - model saved on step: 8700 
+2017-02-09 04:00:59,488 - __main__ - INFO - global step 9000 learning rate 0.5000 step-time 0.1375 perplexity 1.9192 gradient norm 1.1073
+2017-02-09 04:01:04,590 - __main__ - INFO - ==validation: perplexity 1.9776 # samples 60000 
+2017-02-09 04:01:46,877 - __main__ - INFO - model saved on step: 9000 
+2017-02-09 04:02:28,257 - __main__ - INFO - global step 9300 learning rate 0.5000 step-time 0.1377 perplexity 1.8687 gradient norm 1.1213
+2017-02-09 04:02:33,434 - __main__ - INFO - ==validation: perplexity 1.9896 # samples 60000 
+2017-02-09 04:03:19,782 - __main__ - INFO - global step 9600 learning rate 0.5000 step-time 0.1542 perplexity 1.8690 gradient norm 1.0946
+2017-02-09 04:03:26,042 - __main__ - INFO - ==validation: perplexity 1.9674 # samples 60000 
+2017-02-09 04:04:10,647 - __main__ - INFO - model saved on step: 9600 
+2017-02-09 04:04:52,194 - __main__ - INFO - global step 9900 learning rate 0.5000 step-time 0.1382 perplexity 1.8438 gradient norm 1.0994
+2017-02-09 04:04:58,395 - __main__ - INFO - ==validation: perplexity 1.9414 # samples 60000 
+2017-02-09 04:05:38,652 - __main__ - INFO - model saved on step: 9900 
+2017-02-09 04:06:20,842 - __main__ - INFO - global step 10200 learning rate 0.5000 step-time 0.1404 perplexity 1.8163 gradient norm 1.1358
+2017-02-09 04:06:25,959 - __main__ - INFO - ==validation: perplexity 1.9563 # samples 60000 
+2017-02-09 04:07:09,051 - __main__ - INFO - global step 10500 learning rate 0.5000 step-time 0.1434 perplexity 1.8052 gradient norm 1.1231
+2017-02-09 04:07:13,689 - __main__ - INFO - ==validation: perplexity 1.9525 # samples 60000 
+2017-02-09 04:07:57,288 - __main__ - INFO - global step 10800 learning rate 0.5000 step-time 0.1450 perplexity 1.7979 gradient norm 1.1353
+2017-02-09 04:08:04,180 - __main__ - INFO - ==validation: perplexity 1.9410 # samples 60000 
+2017-02-09 04:08:53,325 - __main__ - INFO - model saved on step: 10800 
+2017-02-09 04:09:35,624 - __main__ - INFO - global step 11100 learning rate 0.5000 step-time 0.1407 perplexity 1.7581 gradient norm 1.1247
+2017-02-09 04:09:40,766 - __main__ - INFO - ==validation: perplexity 1.9054 # samples 60000 
+2017-02-09 04:10:23,939 - __main__ - INFO - model saved on step: 11100 
+2017-02-09 04:11:05,618 - __main__ - INFO - global step 11400 learning rate 0.5000 step-time 0.1387 perplexity 1.7384 gradient norm 1.1101
+2017-02-09 04:11:12,784 - __main__ - INFO - ==validation: perplexity 1.8962 # samples 60000 
+2017-02-09 04:11:58,938 - __main__ - INFO - model saved on step: 11400 
+2017-02-09 04:12:41,311 - __main__ - INFO - global step 11700 learning rate 0.5000 step-time 0.1410 perplexity 1.7360 gradient norm 1.1441
+2017-02-09 04:12:45,959 - __main__ - INFO - ==validation: perplexity 1.9156 # samples 60000 
+2017-02-09 04:13:28,801 - __main__ - INFO - global step 12000 learning rate 0.5000 step-time 0.1426 perplexity 1.7216 gradient norm 1.1407
+2017-02-09 04:13:34,144 - __main__ - INFO - ==validation: perplexity 1.8948 # samples 60000 
+2017-02-09 04:14:21,204 - __main__ - INFO - model saved on step: 12000 
+2017-02-09 04:15:04,575 - __main__ - INFO - global step 12300 learning rate 0.5000 step-time 0.1444 perplexity 1.6895 gradient norm 1.1402
+2017-02-09 04:15:10,138 - __main__ - INFO - ==validation: perplexity 1.8768 # samples 60000 
+2017-02-09 04:15:55,958 - __main__ - INFO - model saved on step: 12300 
+2017-02-09 04:16:38,190 - __main__ - INFO - global step 12600 learning rate 0.5000 step-time 0.1406 perplexity 1.7024 gradient norm 1.1407
+2017-02-09 04:16:43,221 - __main__ - INFO - ==validation: perplexity 1.8518 # samples 60000 
+2017-02-09 04:17:25,843 - __main__ - INFO - model saved on step: 12600 
+2017-02-09 04:18:08,392 - __main__ - INFO - global step 12900 learning rate 0.5000 step-time 0.1416 perplexity 1.6742 gradient norm 1.1237
+2017-02-09 04:18:14,641 - __main__ - INFO - ==validation: perplexity 1.8537 # samples 60000 
+2017-02-09 04:18:57,457 - __main__ - INFO - global step 13200 learning rate 0.5000 step-time 0.1425 perplexity 1.6542 gradient norm 1.1451
+2017-02-09 04:19:01,786 - __main__ - INFO - ==validation: perplexity 1.8476 # samples 60000 
+2017-02-09 04:19:50,369 - __main__ - INFO - model saved on step: 13200 
+2017-02-09 04:20:33,372 - __main__ - INFO - global step 13500 learning rate 0.5000 step-time 0.1430 perplexity 1.6477 gradient norm 1.1605
+2017-02-09 04:20:38,537 - __main__ - INFO - ==validation: perplexity 1.8440 # samples 60000 
+2017-02-09 04:21:20,547 - __main__ - INFO - model saved on step: 13500 
+2017-02-09 04:22:04,537 - __main__ - INFO - global step 13800 learning rate 0.5000 step-time 0.1464 perplexity 1.6454 gradient norm 1.1612
+2017-02-09 04:22:10,742 - __main__ - INFO - ==validation: perplexity 1.8265 # samples 60000 
+2017-02-09 04:22:55,488 - __main__ - INFO - model saved on step: 13800 
+2017-02-09 04:23:37,319 - __main__ - INFO - global step 14100 learning rate 0.5000 step-time 0.1392 perplexity 1.6182 gradient norm 1.1343
+2017-02-09 04:23:42,442 - __main__ - INFO - ==validation: perplexity 1.8092 # samples 60000 
+2017-02-09 04:24:27,501 - __main__ - INFO - model saved on step: 14100 
+2017-02-09 04:25:10,160 - __main__ - INFO - global step 14400 learning rate 0.5000 step-time 0.1420 perplexity 1.5990 gradient norm 1.1467
+2017-02-09 04:25:16,191 - __main__ - INFO - ==validation: perplexity 1.8109 # samples 60000 
+2017-02-09 04:25:59,997 - __main__ - INFO - global step 14700 learning rate 0.5000 step-time 0.1457 perplexity 1.5927 gradient norm 1.1512
+2017-02-09 04:26:04,914 - __main__ - INFO - ==validation: perplexity 1.7594 # samples 60000 
+2017-02-09 04:26:50,557 - __main__ - INFO - model saved on step: 14700 
+2017-02-09 04:27:33,407 - __main__ - INFO - global step 15000 learning rate 0.5000 step-time 0.1426 perplexity 1.5942 gradient norm 1.1668
+2017-02-09 04:27:39,071 - __main__ - INFO - ==validation: perplexity 1.7753 # samples 60000 
+2017-02-09 04:28:21,639 - __main__ - INFO - global step 15300 learning rate 0.5000 step-time 0.1416 perplexity 1.5796 gradient norm 1.1595
+2017-02-09 04:28:26,378 - __main__ - INFO - ==validation: perplexity 1.7831 # samples 60000 
+2017-02-09 04:29:08,480 - __main__ - INFO - global step 15600 learning rate 0.5000 step-time 0.1402 perplexity 1.5760 gradient norm 1.1792
+2017-02-09 04:29:14,659 - __main__ - INFO - ==validation: perplexity 1.8012 # samples 60000 
+2017-02-09 04:29:58,051 - __main__ - INFO - global step 15900 learning rate 0.5000 step-time 0.1444 perplexity 1.5657 gradient norm 1.1579
+2017-02-09 04:30:04,466 - __main__ - INFO - ==validation: perplexity 1.7924 # samples 60000 
+2017-02-09 04:30:47,094 - __main__ - INFO - global step 16200 learning rate 0.5000 step-time 0.1419 perplexity 1.5517 gradient norm 1.1673
+2017-02-09 04:30:51,659 - __main__ - INFO - ==validation: perplexity 1.7768 # samples 60000 
+2017-02-09 04:31:34,849 - __main__ - INFO - global step 16500 learning rate 0.5000 step-time 0.1437 perplexity 1.5395 gradient norm 1.1517
+2017-02-09 04:31:40,763 - __main__ - INFO - ==validation: perplexity 1.7256 # samples 60000 
+2017-02-09 04:32:24,180 - __main__ - INFO - model saved on step: 16500 
+2017-02-09 04:33:07,375 - __main__ - INFO - global step 16800 learning rate 0.5000 step-time 0.1437 perplexity 1.5435 gradient norm 1.1631
+2017-02-09 04:33:12,765 - __main__ - INFO - ==validation: perplexity 1.7169 # samples 60000 
+2017-02-09 04:34:03,035 - __main__ - INFO - model saved on step: 16800 
+2017-02-09 04:34:46,425 - __main__ - INFO - global step 17100 learning rate 0.5000 step-time 0.1444 perplexity 1.5231 gradient norm 1.1579
+2017-02-09 04:34:51,268 - __main__ - INFO - ==validation: perplexity 1.7356 # samples 60000 
+2017-02-09 04:35:34,620 - __main__ - INFO - global step 17400 learning rate 0.5000 step-time 0.1443 perplexity 1.5356 gradient norm 1.2065
+2017-02-09 04:35:42,087 - __main__ - INFO - ==validation: perplexity 1.7488 # samples 60000 
+2017-02-09 04:36:25,538 - __main__ - INFO - global step 17700 learning rate 0.5000 step-time 0.1446 perplexity 1.5096 gradient norm 1.1573
+2017-02-09 04:36:30,029 - __main__ - INFO - ==validation: perplexity 1.7482 # samples 60000 
+2017-02-09 04:37:11,973 - __main__ - INFO - global step 18000 learning rate 0.5000 step-time 0.1396 perplexity 1.5040 gradient norm 1.1804
+2017-02-09 04:37:17,182 - __main__ - INFO - ==validation: perplexity 1.7237 # samples 60000 
+2017-02-09 04:38:00,339 - __main__ - INFO - global step 18300 learning rate 0.5000 step-time 0.1436 perplexity 1.4956 gradient norm 1.1910
+2017-02-09 04:38:05,973 - __main__ - INFO - ==validation: perplexity 1.7306 # samples 60000 
+2017-02-09 04:38:48,839 - __main__ - INFO - global step 18600 learning rate 0.5000 step-time 0.1426 perplexity 1.4822 gradient norm 1.1525
+2017-02-09 04:38:54,192 - __main__ - INFO - ==validation: perplexity 1.7374 # samples 60000 
+2017-02-09 04:39:36,297 - __main__ - INFO - global step 18900 learning rate 0.5000 step-time 0.1402 perplexity 1.4824 gradient norm 1.1908
+2017-02-09 04:39:41,765 - __main__ - INFO - ==validation: perplexity 1.7199 # samples 60000 
+2017-02-09 04:40:24,895 - __main__ - INFO - global step 19200 learning rate 0.5000 step-time 0.1435 perplexity 1.4915 gradient norm 1.1998
+2017-02-09 04:40:30,104 - __main__ - INFO - ==validation: perplexity 1.7160 # samples 60000 
+2017-02-09 04:41:13,187 - __main__ - INFO - model saved on step: 19200 
+2017-02-09 04:41:57,378 - __main__ - INFO - global step 19500 learning rate 0.5000 step-time 0.1471 perplexity 1.4754 gradient norm 1.1708
+2017-02-09 04:42:03,361 - __main__ - INFO - ==validation: perplexity 1.7137 # samples 60000 
+2017-02-09 04:42:52,786 - __main__ - INFO - model saved on step: 19500 
+2017-02-09 04:43:35,771 - __main__ - INFO - global step 19800 learning rate 0.5000 step-time 0.1430 perplexity 1.4820 gradient norm 1.2081
+2017-02-09 04:43:40,341 - __main__ - INFO - ==validation: perplexity 1.7446 # samples 60000 
+2017-02-09 04:44:22,371 - __main__ - INFO - global step 20100 learning rate 0.5000 step-time 0.1399 perplexity 1.4769 gradient norm 1.1645
+2017-02-09 04:44:29,978 - __main__ - INFO - ==validation: perplexity 1.6933 # samples 60000 
+2017-02-09 04:45:13,898 - __main__ - INFO - model saved on step: 20100 
+2017-02-09 04:45:57,162 - __main__ - INFO - global step 20400 learning rate 0.5000 step-time 0.1440 perplexity 1.4640 gradient norm 1.1842
+2017-02-09 04:46:03,423 - __main__ - INFO - ==validation: perplexity 1.6852 # samples 60000 
+2017-02-09 04:46:47,546 - __main__ - INFO - model saved on step: 20400 
+2017-02-09 04:47:30,751 - __main__ - INFO - global step 20700 learning rate 0.5000 step-time 0.1438 perplexity 1.4578 gradient norm 1.2024
+2017-02-09 04:47:37,165 - __main__ - INFO - ==validation: perplexity 1.7411 # samples 60000 
+2017-02-09 04:48:20,572 - __main__ - INFO - global step 21000 learning rate 0.5000 step-time 0.1445 perplexity 1.4811 gradient norm 1.2362
+2017-02-09 04:48:26,982 - __main__ - INFO - ==validation: perplexity 1.7107 # samples 60000 
+2017-02-09 04:49:10,463 - __main__ - INFO - global step 21300 learning rate 0.5000 step-time 0.1447 perplexity 1.4483 gradient norm 1.1793
+2017-02-09 04:49:15,515 - __main__ - INFO - ==validation: perplexity 1.7136 # samples 60000 
+2017-02-09 04:49:58,765 - __main__ - INFO - global step 21600 learning rate 0.5000 step-time 0.1439 perplexity 1.4415 gradient norm 1.1762
+2017-02-09 04:50:03,678 - __main__ - INFO - ==validation: perplexity 1.7198 # samples 60000 
+2017-02-09 04:50:46,917 - __main__ - INFO - global step 21900 learning rate 0.5000 step-time 0.1439 perplexity 1.4347 gradient norm 1.1567
+2017-02-09 04:50:52,611 - __main__ - INFO - ==validation: perplexity 1.7490 # samples 60000 
+2017-02-09 04:51:34,940 - __main__ - INFO - global step 22200 learning rate 0.5000 step-time 0.1409 perplexity 1.4332 gradient norm 1.1885
+2017-02-09 04:51:40,528 - __main__ - INFO - ==validation: perplexity 1.6522 # samples 60000 
+2017-02-09 04:52:29,425 - __main__ - INFO - model saved on step: 22200 
+2017-02-09 04:53:12,720 - __main__ - INFO - global step 22500 learning rate 0.5000 step-time 0.1441 perplexity 1.4293 gradient norm 1.1670
+2017-02-09 04:53:17,778 - __main__ - INFO - ==validation: perplexity 1.6829 # samples 60000 
+2017-02-09 04:54:01,044 - __main__ - INFO - global step 22800 learning rate 0.5000 step-time 0.1440 perplexity 1.4270 gradient norm 1.2013
+2017-02-09 04:54:06,608 - __main__ - INFO - ==validation: perplexity 1.6849 # samples 60000 
+2017-02-09 04:54:47,555 - __main__ - INFO - global step 23100 learning rate 0.5000 step-time 0.1363 perplexity 1.4163 gradient norm 1.1498
+2017-02-09 04:54:52,511 - __main__ - INFO - ==validation: perplexity 1.6724 # samples 60000 
+2017-02-09 04:55:33,861 - __main__ - INFO - global step 23400 learning rate 0.5000 step-time 0.1376 perplexity 1.4272 gradient norm 1.1826
+2017-02-09 04:55:39,157 - __main__ - INFO - ==validation: perplexity 1.6860 # samples 60000 
+2017-02-09 04:56:22,420 - __main__ - INFO - global step 23700 learning rate 0.5000 step-time 0.1440 perplexity 1.4166 gradient norm 1.1699
+2017-02-09 04:56:28,063 - __main__ - INFO - ==validation: perplexity 1.7018 # samples 60000 
+2017-02-09 04:57:11,735 - __main__ - INFO - global step 24000 learning rate 0.5000 step-time 0.1453 perplexity 1.4260 gradient norm 1.2197
+2017-02-09 04:57:16,806 - __main__ - INFO - ==validation: perplexity 1.6442 # samples 60000 
+2017-02-09 04:57:59,310 - __main__ - INFO - model saved on step: 24000 
+2017-02-09 04:58:43,166 - __main__ - INFO - global step 24300 learning rate 0.5000 step-time 0.1459 perplexity 1.4086 gradient norm 1.1702
+2017-02-09 04:58:48,604 - __main__ - INFO - ==validation: perplexity 1.6920 # samples 60000 
+2017-02-09 04:59:31,292 - __main__ - INFO - global step 24600 learning rate 0.5000 step-time 0.1421 perplexity 1.4247 gradient norm 1.1900
+2017-02-09 04:59:36,690 - __main__ - INFO - ==validation: perplexity 1.6894 # samples 60000 
+2017-02-09 05:00:19,935 - __main__ - INFO - global step 24900 learning rate 0.5000 step-time 0.1439 perplexity 1.4064 gradient norm 1.1920
+2017-02-09 05:00:26,425 - __main__ - INFO - ==validation: perplexity 1.7206 # samples 60000 
+2017-02-09 05:01:09,228 - __main__ - INFO - global step 25200 learning rate 0.5000 step-time 0.1425 perplexity 1.4055 gradient norm 1.1808
+2017-02-09 05:01:14,809 - __main__ - INFO - ==validation: perplexity 1.6991 # samples 60000 
+2017-02-09 05:01:58,373 - __main__ - INFO - global step 25500 learning rate 0.5000 step-time 0.1450 perplexity 1.3960 gradient norm 1.1714
+2017-02-09 05:02:04,056 - __main__ - INFO - ==validation: perplexity 1.6675 # samples 60000 
+2017-02-09 05:02:45,839 - __main__ - INFO - global step 25800 learning rate 0.5000 step-time 0.1390 perplexity 1.3935 gradient norm 1.1816
+2017-02-09 05:02:50,255 - __main__ - INFO - ==validation: perplexity 1.6893 # samples 60000 
+2017-02-09 05:03:34,774 - __main__ - INFO - global step 26100 learning rate 0.5000 step-time 0.1481 perplexity 1.3808 gradient norm 1.1531
+2017-02-09 05:03:41,654 - __main__ - INFO - ==validation: perplexity 1.6863 # samples 60000 
+2017-02-09 05:04:26,333 - __main__ - INFO - global step 26400 learning rate 0.5000 step-time 0.1487 perplexity 1.3777 gradient norm 1.1741
+2017-02-09 05:04:31,432 - __main__ - INFO - ==validation: perplexity 1.7040 # samples 60000 
+2017-02-09 05:05:15,381 - __main__ - INFO - global step 26700 learning rate 0.5000 step-time 0.1462 perplexity 1.3967 gradient norm 1.1905
+2017-02-09 05:05:20,775 - __main__ - INFO - ==validation: perplexity 1.6899 # samples 60000 
+2017-02-09 05:06:04,015 - __main__ - INFO - global step 27000 learning rate 0.5000 step-time 0.1439 perplexity 1.3885 gradient norm 1.1783
+2017-02-09 05:06:08,679 - __main__ - INFO - ==validation: perplexity 1.6751 # samples 60000 
+2017-02-09 05:06:51,706 - __main__ - INFO - global step 27300 learning rate 0.5000 step-time 0.1431 perplexity 1.3759 gradient norm 1.1839
+2017-02-09 05:06:56,648 - __main__ - INFO - ==validation: perplexity 1.7179 # samples 60000 
+2017-02-09 05:07:40,349 - __main__ - INFO - global step 27600 learning rate 0.5000 step-time 0.1454 perplexity 1.3826 gradient norm 1.1792
+2017-02-09 05:07:45,260 - __main__ - INFO - ==validation: perplexity 1.6954 # samples 60000 
+2017-02-09 05:08:29,171 - __main__ - INFO - global step 27900 learning rate 0.5000 step-time 0.1460 perplexity 1.3777 gradient norm 1.1874
+2017-02-09 05:08:34,477 - __main__ - INFO - ==validation: perplexity 1.6980 # samples 60000 
+2017-02-09 05:09:18,006 - __main__ - INFO - global step 28200 learning rate 0.5000 step-time 0.1448 perplexity 1.3776 gradient norm 1.1990
+2017-02-09 05:09:23,678 - __main__ - INFO - ==validation: perplexity 1.7043 # samples 60000 
+2017-02-09 05:10:07,497 - __main__ - INFO - global step 28500 learning rate 0.5000 step-time 0.1458 perplexity 1.3730 gradient norm 1.2093
+2017-02-09 05:10:13,928 - __main__ - INFO - ==validation: perplexity 1.6883 # samples 60000 
+2017-02-09 05:10:56,134 - __main__ - INFO - global step 28800 learning rate 0.5000 step-time 0.1405 perplexity 1.3762 gradient norm 1.1757
+2017-02-09 05:11:01,205 - __main__ - INFO - ==validation: perplexity 1.6522 # samples 60000 
+2017-02-09 05:11:43,738 - __main__ - INFO - global step 29100 learning rate 0.5000 step-time 0.1415 perplexity 1.3611 gradient norm 1.1802
+2017-02-09 05:11:48,664 - __main__ - INFO - ==validation: perplexity 1.6962 # samples 60000 
+2017-02-09 05:12:31,724 - __main__ - INFO - global step 29400 learning rate 0.5000 step-time 0.1433 perplexity 1.3716 gradient norm 1.1589
+2017-02-09 05:12:38,489 - __main__ - INFO - ==validation: perplexity 1.6999 # samples 60000 
+2017-02-09 05:13:22,644 - __main__ - INFO - global step 29700 learning rate 0.5000 step-time 0.1470 perplexity 1.3600 gradient norm 1.1731
+2017-02-09 05:13:29,570 - __main__ - INFO - ==validation: perplexity 1.6525 # samples 60000 
+2017-02-09 05:14:12,988 - __main__ - INFO - global step 30000 learning rate 0.5000 step-time 0.1445 perplexity 1.3576 gradient norm 1.1740
+2017-02-09 05:14:18,754 - __main__ - INFO - ==validation: perplexity 1.6823 # samples 60000 
+2017-02-09 05:15:02,249 - __main__ - INFO - global step 30300 learning rate 0.5000 step-time 0.1447 perplexity 1.3642 gradient norm 1.1926
+2017-02-09 05:15:07,039 - __main__ - INFO - ==validation: perplexity 1.6690 # samples 60000 
+2017-02-09 05:15:50,926 - __main__ - INFO - global step 30600 learning rate 0.5000 step-time 0.1461 perplexity 1.3516 gradient norm 1.1702
+2017-02-09 05:15:58,085 - __main__ - INFO - ==validation: perplexity 1.6732 # samples 60000 
+2017-02-09 05:16:41,676 - __main__ - INFO - global step 30900 learning rate 0.5000 step-time 0.1451 perplexity 1.3614 gradient norm 1.1885
+2017-02-09 05:16:47,852 - __main__ - INFO - ==validation: perplexity 1.7001 # samples 60000 
+2017-02-09 05:17:31,973 - __main__ - INFO - global step 31200 learning rate 0.5000 step-time 0.1468 perplexity 1.3551 gradient norm 1.1729
+2017-02-09 05:17:36,846 - __main__ - INFO - ==validation: perplexity 1.6959 # samples 60000 
+2017-02-09 05:18:20,731 - __main__ - INFO - global step 31500 learning rate 0.5000 step-time 0.1461 perplexity 1.3606 gradient norm 1.1924
+2017-02-09 05:18:25,615 - __main__ - INFO - ==validation: perplexity 1.6808 # samples 60000 
+2017-02-09 05:19:09,353 - __main__ - INFO - global step 31800 learning rate 0.5000 step-time 0.1456 perplexity 1.3572 gradient norm 1.1889
+2017-02-09 05:19:15,255 - __main__ - INFO - ==validation: perplexity 1.6447 # samples 60000 
+2017-02-09 05:19:58,613 - __main__ - INFO - global step 32100 learning rate 0.5000 step-time 0.1443 perplexity 1.3418 gradient norm 1.2135
+2017-02-09 05:20:04,389 - __main__ - INFO - ==validation: perplexity 1.6827 # samples 60000 
+2017-02-09 05:20:47,171 - __main__ - INFO - global step 32400 learning rate 0.5000 step-time 0.1424 perplexity 1.3481 gradient norm 1.1628
+2017-02-09 05:20:52,735 - __main__ - INFO - ==validation: perplexity 1.6911 # samples 60000 
+2017-02-09 05:21:36,320 - __main__ - INFO - global step 32700 learning rate 0.5000 step-time 0.1450 perplexity 1.3442 gradient norm 1.1830
+2017-02-09 05:21:44,220 - __main__ - INFO - ==validation: perplexity 1.6835 # samples 60000 
+2017-02-09 05:22:27,501 - __main__ - INFO - global step 33000 learning rate 0.5000 step-time 0.1440 perplexity 1.3365 gradient norm 1.1638
+2017-02-09 05:22:33,514 - __main__ - INFO - ==validation: perplexity 1.6615 # samples 60000 
+2017-02-09 05:23:17,012 - __main__ - INFO - global step 33300 learning rate 0.5000 step-time 0.1447 perplexity 1.3340 gradient norm 1.1666
+2017-02-09 05:23:22,369 - __main__ - INFO - ==validation: perplexity 1.6397 # samples 60000 
+2017-02-09 05:24:09,705 - __main__ - INFO - model saved on step: 33300 
+2017-02-09 05:24:54,118 - __main__ - INFO - global step 33600 learning rate 0.5000 step-time 0.1475 perplexity 1.3295 gradient norm 1.1571
+2017-02-09 05:25:00,667 - __main__ - INFO - ==validation: perplexity 1.6286 # samples 60000 
+2017-02-09 05:25:40,336 - __main__ - INFO - model saved on step: 33600 
+2017-02-09 05:26:24,372 - __main__ - INFO - global step 33900 learning rate 0.5000 step-time 0.1465 perplexity 1.3232 gradient norm 1.1375
+2017-02-09 05:26:29,341 - __main__ - INFO - ==validation: perplexity 1.6632 # samples 60000 
+2017-02-09 05:27:13,597 - __main__ - INFO - global step 34200 learning rate 0.5000 step-time 0.1473 perplexity 1.3332 gradient norm 1.1612
+2017-02-09 05:27:19,198 - __main__ - INFO - ==validation: perplexity 1.6624 # samples 60000 
+2017-02-09 05:28:03,430 - __main__ - INFO - global step 34500 learning rate 0.5000 step-time 0.1473 perplexity 1.3383 gradient norm 1.1995
+2017-02-09 05:28:08,413 - __main__ - INFO - ==validation: perplexity 1.6736 # samples 60000 
+2017-02-09 05:28:52,181 - __main__ - INFO - global step 34800 learning rate 0.5000 step-time 0.1457 perplexity 1.3266 gradient norm 1.1477
+2017-02-09 05:28:59,380 - __main__ - INFO - ==validation: perplexity 1.6842 # samples 60000 
+2017-02-09 05:29:43,889 - __main__ - INFO - global step 35100 learning rate 0.5000 step-time 0.1481 perplexity 1.3377 gradient norm 1.2060
+2017-02-09 05:29:49,614 - __main__ - INFO - ==validation: perplexity 1.6718 # samples 60000 
+2017-02-09 05:30:33,125 - __main__ - INFO - global step 35400 learning rate 0.5000 step-time 0.1449 perplexity 1.3279 gradient norm 1.1840
+2017-02-09 05:30:37,804 - __main__ - INFO - ==validation: perplexity 1.6503 # samples 60000 
+2017-02-09 05:31:21,921 - __main__ - INFO - global step 35700 learning rate 0.5000 step-time 0.1467 perplexity 1.3267 gradient norm 1.1739
+2017-02-09 05:31:27,238 - __main__ - INFO - ==validation: perplexity 1.7144 # samples 60000 
+2017-02-09 05:32:11,096 - __main__ - INFO - global step 36000 learning rate 0.5000 step-time 0.1460 perplexity 1.3254 gradient norm 1.1847
+2017-02-09 05:32:17,682 - __main__ - INFO - ==validation: perplexity 1.6893 # samples 60000 
+2017-02-09 05:33:00,788 - __main__ - INFO - global step 36300 learning rate 0.5000 step-time 0.1434 perplexity 1.3217 gradient norm 1.1614
+2017-02-09 05:33:05,992 - __main__ - INFO - ==validation: perplexity 1.6506 # samples 60000 
+2017-02-09 05:33:50,060 - __main__ - INFO - global step 36600 learning rate 0.5000 step-time 0.1466 perplexity 1.3217 gradient norm 1.1836
+2017-02-09 05:33:56,316 - __main__ - INFO - ==validation: perplexity 1.6847 # samples 60000 
+2017-02-09 05:34:40,638 - __main__ - INFO - global step 36900 learning rate 0.5000 step-time 0.1475 perplexity 1.3300 gradient norm 1.2005
+2017-02-09 05:34:46,069 - __main__ - INFO - ==validation: perplexity 1.6974 # samples 60000 
+2017-02-09 05:35:30,012 - __main__ - INFO - global step 37200 learning rate 0.5000 step-time 0.1462 perplexity 1.3196 gradient norm 1.1630
+2017-02-09 05:35:36,219 - __main__ - INFO - ==validation: perplexity 1.6754 # samples 60000 
+2017-02-09 05:36:20,038 - __main__ - INFO - global step 37500 learning rate 0.5000 step-time 0.1458 perplexity 1.3123 gradient norm 1.1686
+2017-02-09 05:36:25,089 - __main__ - INFO - ==validation: perplexity 1.6912 # samples 60000 
+2017-02-09 05:37:08,887 - __main__ - INFO - global step 37800 learning rate 0.5000 step-time 0.1458 perplexity 1.3267 gradient norm 1.1881
+2017-02-09 05:37:15,059 - __main__ - INFO - ==validation: perplexity 1.6542 # samples 60000 
+2017-02-09 05:37:59,320 - __main__ - INFO - global step 38100 learning rate 0.5000 step-time 0.1473 perplexity 1.3123 gradient norm 1.2033
+2017-02-09 05:38:05,081 - __main__ - INFO - ==validation: perplexity 1.6545 # samples 60000 
+2017-02-09 05:38:48,915 - __main__ - INFO - global step 38400 learning rate 0.5000 step-time 0.1459 perplexity 1.3296 gradient norm 1.2051
+2017-02-09 05:38:54,973 - __main__ - INFO - ==validation: perplexity 1.7025 # samples 60000 
+2017-02-09 05:39:39,607 - __main__ - INFO - global step 38700 learning rate 0.5000 step-time 0.1485 perplexity 1.3223 gradient norm 1.1643
+2017-02-09 05:39:45,973 - __main__ - INFO - ==validation: perplexity 1.6591 # samples 60000 
+2017-02-09 05:40:30,225 - __main__ - INFO - global step 39000 learning rate 0.5000 step-time 0.1472 perplexity 1.3080 gradient norm 1.1669
+2017-02-09 05:40:36,624 - __main__ - INFO - ==validation: perplexity 1.6934 # samples 60000 
+2017-02-09 05:41:20,507 - __main__ - INFO - global step 39300 learning rate 0.5000 step-time 0.1461 perplexity 1.3057 gradient norm 1.1516
+2017-02-09 05:41:26,284 - __main__ - INFO - ==validation: perplexity 1.6848 # samples 60000 
+2017-02-09 05:42:09,391 - __main__ - INFO - global step 39600 learning rate 0.5000 step-time 0.1435 perplexity 1.3081 gradient norm 1.1713
+2017-02-09 05:42:14,558 - __main__ - INFO - ==validation: perplexity 1.6748 # samples 60000 
+2017-02-09 05:42:54,013 - __main__ - INFO - global step 39900 learning rate 0.5000 step-time 0.1313 perplexity 1.3216 gradient norm 1.2424
+2017-02-09 05:42:58,958 - __main__ - INFO - ==validation: perplexity 1.6688 # samples 60000 
+2017-02-09 05:43:39,230 - __main__ - INFO - global step 40200 learning rate 0.5000 step-time 0.1340 perplexity 1.3045 gradient norm 1.1641
+2017-02-09 05:43:46,935 - __main__ - INFO - ==validation: perplexity 1.7151 # samples 60000 
+2017-02-09 05:44:27,209 - __main__ - INFO - global step 40500 learning rate 0.5000 step-time 0.1340 perplexity 1.3049 gradient norm 1.1957
+2017-02-09 05:44:32,699 - __main__ - INFO - ==validation: perplexity 1.6704 # samples 60000 
+2017-02-09 05:45:09,810 - __main__ - INFO - global step 40800 learning rate 0.5000 step-time 0.1235 perplexity 1.3030 gradient norm 1.2054
+2017-02-09 05:45:17,032 - __main__ - INFO - ==validation: perplexity 1.6854 # samples 60000 
+2017-02-09 05:45:53,793 - __main__ - INFO - global step 41100 learning rate 0.5000 step-time 0.1223 perplexity 1.3033 gradient norm 1.1783
+2017-02-09 05:45:59,152 - __main__ - INFO - ==validation: perplexity 1.6642 # samples 60000 
+2017-02-09 05:46:36,931 - __main__ - INFO - global step 41400 learning rate 0.5000 step-time 0.1258 perplexity 1.3135 gradient norm 1.1718
+2017-02-09 05:46:41,131 - __main__ - INFO - ==validation: perplexity 1.6400 # samples 60000 
+2017-02-09 05:47:16,589 - __main__ - INFO - global step 41700 learning rate 0.5000 step-time 0.1180 perplexity 1.3015 gradient norm 1.1623
+2017-02-09 05:47:22,509 - __main__ - INFO - ==validation: perplexity 1.6836 # samples 60000 
+2017-02-09 05:47:57,522 - __main__ - INFO - global step 42000 learning rate 0.5000 step-time 0.1165 perplexity 1.2915 gradient norm 1.1754
+2017-02-09 05:48:05,170 - __main__ - INFO - ==validation: perplexity 1.6682 # samples 60000 
+2017-02-09 05:48:40,366 - __main__ - INFO - global step 42300 learning rate 0.5000 step-time 0.1171 perplexity 1.2967 gradient norm 1.1954
+2017-02-09 05:48:44,463 - __main__ - INFO - ==validation: perplexity 1.6928 # samples 60000 
+2017-02-09 05:49:18,829 - __main__ - INFO - global step 42600 learning rate 0.5000 step-time 0.1144 perplexity 1.3032 gradient norm 1.1819
+2017-02-09 05:49:23,542 - __main__ - INFO - ==validation: perplexity 1.6750 # samples 60000 
+2017-02-09 05:49:57,222 - __main__ - INFO - global step 42900 learning rate 0.5000 step-time 0.1121 perplexity 1.2945 gradient norm 1.1646
+2017-02-09 05:50:01,707 - __main__ - INFO - ==validation: perplexity 1.6755 # samples 60000 
+2017-02-09 05:50:35,980 - __main__ - INFO - global step 43200 learning rate 0.5000 step-time 0.1141 perplexity 1.2963 gradient norm 1.1870
+2017-02-09 05:50:40,985 - __main__ - INFO - ==validation: perplexity 1.7011 # samples 60000 
+2017-02-09 05:51:15,050 - __main__ - INFO - global step 43500 learning rate 0.5000 step-time 0.1134 perplexity 1.2885 gradient norm 1.1628
+2017-02-09 05:51:20,538 - __main__ - INFO - ==validation: perplexity 1.7010 # samples 60000 
+2017-02-09 05:51:54,297 - __main__ - INFO - global step 43800 learning rate 0.5000 step-time 0.1122 perplexity 1.2922 gradient norm 1.1718
+2017-02-09 05:52:00,797 - __main__ - INFO - ==validation: perplexity 1.7038 # samples 60000 
+2017-02-09 05:52:34,442 - __main__ - INFO - global step 44100 learning rate 0.5000 step-time 0.1120 perplexity 1.3007 gradient norm 1.1773
+2017-02-09 05:52:38,505 - __main__ - INFO - ==validation: perplexity 1.6651 # samples 60000 
+2017-02-09 05:53:12,495 - __main__ - INFO - global step 44400 learning rate 0.5000 step-time 0.1131 perplexity 1.2885 gradient norm 1.1803
+2017-02-09 05:53:17,255 - __main__ - INFO - ==validation: perplexity 1.6611 # samples 60000 
+2017-02-09 05:53:52,019 - __main__ - INFO - global step 44700 learning rate 0.5000 step-time 0.1157 perplexity 1.2939 gradient norm 1.1809
+2017-02-09 05:53:57,479 - __main__ - INFO - ==validation: perplexity 1.6745 # samples 60000 
+2017-02-09 05:54:31,858 - __main__ - INFO - global step 45000 learning rate 0.5000 step-time 0.1144 perplexity 1.2985 gradient norm 1.1961
+2017-02-09 05:54:36,970 - __main__ - INFO - ==validation: perplexity 1.6568 # samples 60000 
+2017-02-09 05:55:10,646 - __main__ - INFO - global step 45300 learning rate 0.5000 step-time 0.1120 perplexity 1.2882 gradient norm 1.1855
+2017-02-09 05:55:15,109 - __main__ - INFO - ==validation: perplexity 1.6815 # samples 60000 
+2017-02-09 05:55:49,149 - __main__ - INFO - global step 45600 learning rate 0.5000 step-time 0.1133 perplexity 1.2869 gradient norm 1.1702
+2017-02-09 05:55:54,338 - __main__ - INFO - ==validation: perplexity 1.6736 # samples 60000 
+2017-02-09 05:56:27,812 - __main__ - INFO - global step 45900 learning rate 0.5000 step-time 0.1114 perplexity 1.2876 gradient norm 1.1729
+2017-02-09 05:56:33,847 - __main__ - INFO - ==validation: perplexity 1.6675 # samples 60000 
+2017-02-09 05:57:07,480 - __main__ - INFO - global step 46200 learning rate 0.5000 step-time 0.1119 perplexity 1.2822 gradient norm 1.1669
+2017-02-09 05:57:12,109 - __main__ - INFO - ==validation: perplexity 1.7447 # samples 60000 
+2017-02-09 05:57:46,684 - __main__ - INFO - global step 46500 learning rate 0.5000 step-time 0.1150 perplexity 1.2936 gradient norm 1.1951
+2017-02-09 05:57:52,018 - __main__ - INFO - ==validation: perplexity 1.7118 # samples 60000 
+2017-02-09 05:58:25,680 - __main__ - INFO - global step 46800 learning rate 0.5000 step-time 0.1121 perplexity 1.2850 gradient norm 1.1646
+2017-02-09 05:58:30,758 - __main__ - INFO - ==validation: perplexity 1.6817 # samples 60000 
+2017-02-09 05:59:03,937 - __main__ - INFO - global step 47100 learning rate 0.5000 step-time 0.1104 perplexity 1.2892 gradient norm 1.1654
+2017-02-09 05:59:08,991 - __main__ - INFO - ==validation: perplexity 1.6842 # samples 60000 
+2017-02-09 05:59:42,340 - __main__ - INFO - global step 47400 learning rate 0.5000 step-time 0.1110 perplexity 1.2815 gradient norm 1.1906
+2017-02-09 05:59:47,665 - __main__ - INFO - ==validation: perplexity 1.6468 # samples 60000 
+2017-02-09 06:00:21,138 - __main__ - INFO - global step 47700 learning rate 0.5000 step-time 0.1114 perplexity 1.2871 gradient norm 1.2037
+2017-02-09 06:00:25,341 - __main__ - INFO - ==validation: perplexity 1.7001 # samples 60000 
+2017-02-09 06:00:59,426 - __main__ - INFO - global step 48000 learning rate 0.5000 step-time 0.1134 perplexity 1.2838 gradient norm 1.1686
+2017-02-09 06:01:04,112 - __main__ - INFO - ==validation: perplexity 1.7009 # samples 60000 
+2017-02-09 06:01:38,136 - __main__ - INFO - global step 48300 learning rate 0.5000 step-time 0.1133 perplexity 1.2842 gradient norm 1.1840
+2017-02-09 06:01:44,237 - __main__ - INFO - ==validation: perplexity 1.6734 # samples 60000 
+2017-02-09 06:02:17,572 - __main__ - INFO - global step 48600 learning rate 0.5000 step-time 0.1109 perplexity 1.2897 gradient norm 1.1924
+2017-02-09 06:02:23,161 - __main__ - INFO - ==validation: perplexity 1.6744 # samples 60000 
+2017-02-09 06:02:57,114 - __main__ - INFO - global step 48900 learning rate 0.5000 step-time 0.1129 perplexity 1.2784 gradient norm 1.1567
+2017-02-09 06:03:02,242 - __main__ - INFO - ==validation: perplexity 1.6754 # samples 60000 
+2017-02-09 06:03:35,905 - __main__ - INFO - global step 49200 learning rate 0.5000 step-time 0.1120 perplexity 1.2711 gradient norm 1.1601
+2017-02-09 06:03:40,861 - __main__ - INFO - ==validation: perplexity 1.6591 # samples 60000 
+2017-02-09 06:04:14,837 - __main__ - INFO - global step 49500 learning rate 0.5000 step-time 0.1130 perplexity 1.2795 gradient norm 1.1685
+2017-02-09 06:04:20,963 - __main__ - INFO - ==validation: perplexity 1.6593 # samples 60000 
+2017-02-09 06:04:55,418 - __main__ - INFO - global step 49800 learning rate 0.5000 step-time 0.1147 perplexity 1.2748 gradient norm 1.1663
+2017-02-09 06:05:02,875 - __main__ - INFO - ==validation: perplexity 1.6627 # samples 60000 
+2017-02-09 06:05:36,647 - __main__ - INFO - global step 50100 learning rate 0.5000 step-time 0.1124 perplexity 1.2725 gradient norm 1.1483
+2017-02-09 06:05:41,547 - __main__ - INFO - ==validation: perplexity 1.6524 # samples 60000 
+2017-02-09 06:06:15,302 - __main__ - INFO - global step 50400 learning rate 0.5000 step-time 0.1124 perplexity 1.2748 gradient norm 1.1713
+2017-02-09 06:06:21,272 - __main__ - INFO - ==validation: perplexity 1.6702 # samples 60000 
+2017-02-09 06:06:55,185 - __main__ - INFO - global step 50700 learning rate 0.5000 step-time 0.1128 perplexity 1.2817 gradient norm 1.2223
+2017-02-09 06:07:00,182 - __main__ - INFO - ==validation: perplexity 1.6654 # samples 60000 
+2017-02-09 06:07:34,260 - __main__ - INFO - global step 51000 learning rate 0.5000 step-time 0.1134 perplexity 1.2742 gradient norm 1.2132
+2017-02-09 06:07:38,184 - __main__ - INFO - ==validation: perplexity 1.7020 # samples 60000 
+2017-02-09 06:08:11,502 - __main__ - INFO - global step 51300 learning rate 0.5000 step-time 0.1109 perplexity 1.2750 gradient norm 1.1988
+2017-02-09 06:08:16,236 - __main__ - INFO - ==validation: perplexity 1.7244 # samples 60000 
+2017-02-09 06:08:50,010 - __main__ - INFO - global step 51600 learning rate 0.5000 step-time 0.1124 perplexity 1.2746 gradient norm 1.1960
+2017-02-09 06:08:54,683 - __main__ - INFO - ==validation: perplexity 1.7071 # samples 60000 
+2017-02-09 06:09:28,407 - __main__ - INFO - global step 51900 learning rate 0.5000 step-time 0.1122 perplexity 1.2764 gradient norm 1.1875
+2017-02-09 06:09:33,315 - __main__ - INFO - ==validation: perplexity 1.6490 # samples 60000 
+2017-02-09 06:10:06,703 - __main__ - INFO - global step 52200 learning rate 0.5000 step-time 0.1111 perplexity 1.2678 gradient norm 1.1508
+2017-02-09 06:10:11,612 - __main__ - INFO - ==validation: perplexity 1.6577 # samples 60000 
+2017-02-09 06:10:45,849 - __main__ - INFO - global step 52500 learning rate 0.5000 step-time 0.1138 perplexity 1.2676 gradient norm 1.1771
+2017-02-09 06:10:52,032 - __main__ - INFO - ==validation: perplexity 1.6747 # samples 60000 
+2017-02-09 06:11:26,191 - __main__ - INFO - global step 52800 learning rate 0.5000 step-time 0.1137 perplexity 1.2755 gradient norm 1.1878
+2017-02-09 06:11:32,394 - __main__ - INFO - ==validation: perplexity 1.6695 # samples 60000 
+2017-02-09 06:12:06,141 - __main__ - INFO - global step 53100 learning rate 0.5000 step-time 0.1123 perplexity 1.2660 gradient norm 1.1612
+2017-02-09 06:12:11,155 - __main__ - INFO - ==validation: perplexity 1.6692 # samples 60000 
+2017-02-09 06:12:45,379 - __main__ - INFO - global step 53400 learning rate 0.5000 step-time 0.1139 perplexity 1.2697 gradient norm 1.1718
+2017-02-09 06:12:51,771 - __main__ - INFO - ==validation: perplexity 1.6865 # samples 60000 
+2017-02-09 06:13:26,192 - __main__ - INFO - global step 53700 learning rate 0.5000 step-time 0.1146 perplexity 1.2741 gradient norm 1.1980
+2017-02-09 06:13:33,208 - __main__ - INFO - ==validation: perplexity 1.6336 # samples 60000 
+2017-02-09 06:14:07,826 - __main__ - INFO - global step 54000 learning rate 0.5000 step-time 0.1153 perplexity 1.2781 gradient norm 1.2005
+2017-02-09 06:14:12,075 - __main__ - INFO - ==validation: perplexity 1.6545 # samples 60000 
+2017-02-09 06:14:46,204 - __main__ - INFO - global step 54300 learning rate 0.5000 step-time 0.1136 perplexity 1.2691 gradient norm 1.1562
+2017-02-09 06:14:50,710 - __main__ - INFO - ==validation: perplexity 1.6921 # samples 60000 
+2017-02-09 06:15:25,581 - __main__ - INFO - global step 54600 learning rate 0.5000 step-time 0.1161 perplexity 1.2669 gradient norm 1.1776
+2017-02-09 06:15:29,699 - __main__ - INFO - ==validation: perplexity 1.6607 # samples 60000 
+2017-02-09 06:16:03,496 - __main__ - INFO - global step 54900 learning rate 0.5000 step-time 0.1125 perplexity 1.2778 gradient norm 1.2046
+2017-02-09 06:16:08,874 - __main__ - INFO - ==validation: perplexity 1.6914 # samples 60000 
+2017-02-09 06:16:42,685 - __main__ - INFO - global step 55200 learning rate 0.5000 step-time 0.1125 perplexity 1.2657 gradient norm 1.1599
+2017-02-09 06:16:48,460 - __main__ - INFO - ==validation: perplexity 1.6889 # samples 60000 
+2017-02-09 06:17:21,863 - __main__ - INFO - global step 55500 learning rate 0.5000 step-time 0.1111 perplexity 1.2630 gradient norm 1.1765
+2017-02-09 06:17:27,684 - __main__ - INFO - ==validation: perplexity 1.7095 # samples 60000 
+2017-02-09 06:18:01,750 - __main__ - INFO - global step 55800 learning rate 0.5000 step-time 0.1134 perplexity 1.2626 gradient norm 1.1798
+2017-02-09 06:18:09,506 - __main__ - INFO - ==validation: perplexity 1.6862 # samples 60000 
+2017-02-09 06:18:43,631 - __main__ - INFO - global step 56100 learning rate 0.5000 step-time 0.1136 perplexity 1.2599 gradient norm 1.1793
+2017-02-09 06:18:50,257 - __main__ - INFO - ==validation: perplexity 1.6777 # samples 60000 
+2017-02-09 06:19:24,205 - __main__ - INFO - global step 56400 learning rate 0.5000 step-time 0.1130 perplexity 1.2574 gradient norm 1.1639
+2017-02-09 06:19:29,565 - __main__ - INFO - ==validation: perplexity 1.6691 # samples 60000 
+2017-02-09 06:20:03,252 - __main__ - INFO - global step 56700 learning rate 0.5000 step-time 0.1121 perplexity 1.2608 gradient norm 1.1676
+2017-02-09 06:20:08,737 - __main__ - INFO - ==validation: perplexity 1.7182 # samples 60000 
+2017-02-09 06:20:43,158 - __main__ - INFO - global step 57000 learning rate 0.5000 step-time 0.1146 perplexity 1.2619 gradient norm 1.2247
+2017-02-09 06:20:48,284 - __main__ - INFO - ==validation: perplexity 1.6396 # samples 60000 
+2017-02-09 06:21:21,934 - __main__ - INFO - global step 57300 learning rate 0.5000 step-time 0.1120 perplexity 1.2670 gradient norm 1.1702
+2017-02-09 06:21:25,821 - __main__ - INFO - ==validation: perplexity 1.6703 # samples 60000 
+2017-02-09 06:21:59,118 - __main__ - INFO - global step 57600 learning rate 0.5000 step-time 0.1108 perplexity 1.2578 gradient norm 1.1922
+2017-02-09 06:22:03,138 - __main__ - INFO - ==validation: perplexity 1.7061 # samples 60000 
+2017-02-09 06:22:36,533 - __main__ - INFO - global step 57900 learning rate 0.5000 step-time 0.1112 perplexity 1.2594 gradient norm 1.2240
+2017-02-09 06:22:41,782 - __main__ - INFO - ==validation: perplexity 1.7629 # samples 60000 
+2017-02-09 06:23:14,854 - __main__ - INFO - global step 58200 learning rate 0.5000 step-time 0.1100 perplexity 1.2581 gradient norm 1.1783
+2017-02-09 06:23:20,825 - __main__ - INFO - ==validation: perplexity 1.6486 # samples 60000 
+2017-02-09 06:23:53,391 - __main__ - INFO - global step 58500 learning rate 0.5000 step-time 0.1084 perplexity 1.2655 gradient norm 1.1826
+2017-02-09 06:24:00,196 - __main__ - INFO - ==validation: perplexity 1.6822 # samples 60000 
+2017-02-09 06:24:32,987 - __main__ - INFO - global step 58800 learning rate 0.5000 step-time 0.1091 perplexity 1.2584 gradient norm 1.1830
+2017-02-09 06:24:38,959 - __main__ - INFO - ==validation: perplexity 1.7338 # samples 60000 
+2017-02-09 06:25:12,090 - __main__ - INFO - global step 59100 learning rate 0.5000 step-time 0.1103 perplexity 1.2542 gradient norm 1.1673
+2017-02-09 06:25:16,771 - __main__ - INFO - ==validation: perplexity 1.6871 # samples 60000 
+2017-02-09 06:25:50,032 - __main__ - INFO - global step 59400 learning rate 0.5000 step-time 0.1107 perplexity 1.2587 gradient norm 1.1852
+2017-02-09 06:25:54,807 - __main__ - INFO - ==validation: perplexity 1.6748 # samples 60000 
+2017-02-09 06:26:28,080 - __main__ - INFO - global step 59700 learning rate 0.5000 step-time 0.1107 perplexity 1.2589 gradient norm 1.1860
+2017-02-09 06:26:33,745 - __main__ - INFO - ==validation: perplexity 1.7179 # samples 60000 
+2017-02-09 06:27:07,218 - __main__ - INFO - global step 60000 learning rate 0.5000 step-time 0.1114 perplexity 1.2523 gradient norm 1.1916
+2017-02-09 06:27:13,301 - __main__ - INFO - ==validation: perplexity 1.6853 # samples 60000 
+2017-02-09 06:27:45,936 - __main__ - INFO - global step 60300 learning rate 0.5000 step-time 0.1086 perplexity 1.2621 gradient norm 1.1961
+2017-02-09 06:27:51,235 - __main__ - INFO - ==validation: perplexity 1.6658 # samples 60000 
+2017-02-09 06:28:21,662 - __main__ - INFO - global step 60600 learning rate 0.5000 step-time 0.1012 perplexity 1.2542 gradient norm 1.1870
+2017-02-09 06:28:27,492 - __main__ - INFO - ==validation: perplexity 1.7024 # samples 60000 
+2017-02-09 06:29:00,622 - __main__ - INFO - global step 60900 learning rate 0.5000 step-time 0.1103 perplexity 1.2658 gradient norm 1.2061
+2017-02-09 06:29:05,565 - __main__ - INFO - ==validation: perplexity 1.6493 # samples 60000 
+2017-02-09 06:29:37,777 - __main__ - INFO - global step 61200 learning rate 0.5000 step-time 0.1072 perplexity 1.2691 gradient norm 1.1929
+2017-02-09 06:29:43,413 - __main__ - INFO - ==validation: perplexity 1.7497 # samples 60000 
+2017-02-09 06:30:16,556 - __main__ - INFO - global step 61500 learning rate 0.5000 step-time 0.1103 perplexity 1.2551 gradient norm 1.1932
+2017-02-09 06:30:22,320 - __main__ - INFO - ==validation: perplexity 1.6732 # samples 60000 
+2017-02-09 06:30:55,691 - __main__ - INFO - global step 61800 learning rate 0.5000 step-time 0.1111 perplexity 1.2533 gradient norm 1.1745
+2017-02-09 06:31:00,989 - __main__ - INFO - ==validation: perplexity 1.6890 # samples 60000 
+2017-02-09 06:31:33,350 - __main__ - INFO - global step 62100 learning rate 0.5000 step-time 0.1077 perplexity 1.2516 gradient norm 1.1618
+2017-02-09 06:31:38,248 - __main__ - INFO - ==validation: perplexity 1.6796 # samples 60000 
+2017-02-09 06:32:10,837 - __main__ - INFO - global step 62400 learning rate 0.5000 step-time 0.1085 perplexity 1.2529 gradient norm 1.1781
+2017-02-09 06:32:15,750 - __main__ - INFO - ==validation: perplexity 1.7130 # samples 60000 
+2017-02-09 06:32:48,564 - __main__ - INFO - global step 62700 learning rate 0.5000 step-time 0.1092 perplexity 1.2498 gradient norm 1.1982
+2017-02-09 06:32:52,703 - __main__ - INFO - ==validation: perplexity 1.6883 # samples 60000 
+2017-02-09 06:33:24,695 - __main__ - INFO - global step 63000 learning rate 0.5000 step-time 0.1065 perplexity 1.2514 gradient norm 1.1762
+2017-02-09 06:33:28,590 - __main__ - INFO - ==validation: perplexity 1.7067 # samples 60000 
+2017-02-09 06:34:01,733 - __main__ - INFO - global step 63300 learning rate 0.5000 step-time 0.1103 perplexity 1.2526 gradient norm 1.2363
+2017-02-09 06:34:06,928 - __main__ - INFO - ==validation: perplexity 1.6728 # samples 60000 
+2017-02-09 06:34:37,213 - __main__ - INFO - global step 63600 learning rate 0.5000 step-time 0.1008 perplexity 1.2447 gradient norm 1.1911
+2017-02-09 06:34:41,726 - __main__ - INFO - ==validation: perplexity 1.6955 # samples 60000 
+2017-02-09 06:35:13,930 - __main__ - INFO - global step 63900 learning rate 0.5000 step-time 0.1072 perplexity 1.2622 gradient norm 1.2041
+2017-02-09 06:35:18,206 - __main__ - INFO - ==validation: perplexity 1.6911 # samples 60000 
+2017-02-09 06:35:51,225 - __main__ - INFO - global step 64200 learning rate 0.5000 step-time 0.1099 perplexity 1.2418 gradient norm 1.1652
+2017-02-09 06:35:54,577 - __main__ - INFO - ==validation: perplexity 1.6763 # samples 60000 
+2017-02-09 06:36:27,184 - __main__ - INFO - global step 64500 learning rate 0.5000 step-time 0.1085 perplexity 1.2533 gradient norm 1.1812
+2017-02-09 06:36:33,554 - __main__ - INFO - ==validation: perplexity 1.6336 # samples 60000 
+2017-02-09 06:37:06,029 - __main__ - INFO - global step 64800 learning rate 0.5000 step-time 0.1081 perplexity 1.2449 gradient norm 1.1763
+2017-02-09 06:37:12,499 - __main__ - INFO - ==validation: perplexity 1.7096 # samples 60000 
+2017-02-09 06:37:44,378 - __main__ - INFO - global step 65100 learning rate 0.5000 step-time 0.1061 perplexity 1.2404 gradient norm 1.1577
+2017-02-09 06:37:49,366 - __main__ - INFO - ==validation: perplexity 1.7047 # samples 60000 
+2017-02-09 06:38:22,034 - __main__ - INFO - global step 65400 learning rate 0.5000 step-time 0.1087 perplexity 1.2495 gradient norm 1.2096
+2017-02-09 06:38:26,934 - __main__ - INFO - ==validation: perplexity 1.6702 # samples 60000 
+2017-02-09 06:38:59,345 - __main__ - INFO - global step 65700 learning rate 0.5000 step-time 0.1079 perplexity 1.2465 gradient norm 1.1765
+2017-02-09 06:39:04,893 - __main__ - INFO - ==validation: perplexity 1.6952 # samples 60000 
+2017-02-09 06:39:37,337 - __main__ - INFO - global step 66000 learning rate 0.5000 step-time 0.1080 perplexity 1.2468 gradient norm 1.1380
+2017-02-09 06:39:42,370 - __main__ - INFO - ==validation: perplexity 1.7217 # samples 60000 
+2017-02-09 06:40:14,717 - __main__ - INFO - global step 66300 learning rate 0.5000 step-time 0.1077 perplexity 1.2476 gradient norm 1.1936
+2017-02-09 06:40:21,051 - __main__ - INFO - ==validation: perplexity 1.6744 # samples 60000 
+2017-02-09 06:40:54,150 - __main__ - INFO - global step 66600 learning rate 0.5000 step-time 0.1101 perplexity 1.2461 gradient norm 1.1783
+2017-02-09 06:41:00,442 - __main__ - INFO - ==validation: perplexity 1.6700 # samples 60000 
+2017-02-09 06:41:32,723 - __main__ - INFO - global step 66900 learning rate 0.5000 step-time 0.1074 perplexity 1.2468 gradient norm 1.2104
+2017-02-09 06:41:38,362 - __main__ - INFO - ==validation: perplexity 1.6880 # samples 60000 
+2017-02-09 06:42:11,812 - __main__ - INFO - global step 67200 learning rate 0.5000 step-time 0.1114 perplexity 1.2492 gradient norm 1.2156
+2017-02-09 06:42:16,587 - __main__ - INFO - ==validation: perplexity 1.6682 # samples 60000 
+2017-02-09 06:42:49,882 - __main__ - INFO - global step 67500 learning rate 0.5000 step-time 0.1108 perplexity 1.2448 gradient norm 1.1796
+2017-02-09 06:42:53,953 - __main__ - INFO - ==validation: perplexity 1.7329 # samples 60000 
+2017-02-09 06:43:26,599 - __main__ - INFO - global step 67800 learning rate 0.5000 step-time 0.1087 perplexity 1.2459 gradient norm 1.1803
+2017-02-09 06:43:31,890 - __main__ - INFO - ==validation: perplexity 1.7147 # samples 60000 
+2017-02-09 06:44:04,416 - __main__ - INFO - global step 68100 learning rate 0.5000 step-time 0.1082 perplexity 1.2496 gradient norm 1.2003
+2017-02-09 06:44:09,601 - __main__ - INFO - ==validation: perplexity 1.7035 # samples 60000 
+2017-02-09 06:44:42,868 - __main__ - INFO - global step 68400 learning rate 0.5000 step-time 0.1107 perplexity 1.2508 gradient norm 1.2027
+2017-02-09 06:44:47,886 - __main__ - INFO - ==validation: perplexity 1.6750 # samples 60000 
+2017-02-09 06:45:21,445 - __main__ - INFO - global step 68700 learning rate 0.5000 step-time 0.1117 perplexity 1.2546 gradient norm 1.1986
+2017-02-09 06:45:26,353 - __main__ - INFO - ==validation: perplexity 1.7303 # samples 60000 
+2017-02-09 06:45:58,155 - __main__ - INFO - global step 69000 learning rate 0.5000 step-time 0.1059 perplexity 1.2519 gradient norm 1.1668
+2017-02-09 06:46:03,545 - __main__ - INFO - ==validation: perplexity 1.7566 # samples 60000 
+2017-02-09 06:46:36,059 - __main__ - INFO - global step 69300 learning rate 0.5000 step-time 0.1082 perplexity 1.2405 gradient norm 1.2196
+2017-02-09 06:46:40,030 - __main__ - INFO - ==validation: perplexity 1.6989 # samples 60000 
+2017-02-09 06:47:12,608 - __main__ - INFO - global step 69600 learning rate 0.5000 step-time 0.1084 perplexity 1.2382 gradient norm 1.1554
+2017-02-09 06:47:17,964 - __main__ - INFO - ==validation: perplexity 1.7128 # samples 60000 
+2017-02-09 06:47:50,651 - __main__ - INFO - global step 69900 learning rate 0.5000 step-time 0.1088 perplexity 1.2414 gradient norm 1.2141
+2017-02-09 06:47:56,204 - __main__ - INFO - ==validation: perplexity 1.6881 # samples 60000 
+2017-02-09 06:48:28,923 - __main__ - INFO - global step 70200 learning rate 0.5000 step-time 0.1089 perplexity 1.2462 gradient norm 1.1880
+2017-02-09 06:48:36,030 - __main__ - INFO - ==validation: perplexity 1.7098 # samples 60000 
+2017-02-09 06:49:08,550 - __main__ - INFO - global step 70500 learning rate 0.5000 step-time 0.1082 perplexity 1.2486 gradient norm 1.1980
+2017-02-09 06:49:12,946 - __main__ - INFO - ==validation: perplexity 1.7072 # samples 60000 
+2017-02-09 06:49:46,216 - __main__ - INFO - global step 70800 learning rate 0.5000 step-time 0.1106 perplexity 1.2411 gradient norm 1.2029
+2017-02-09 06:49:52,077 - __main__ - INFO - ==validation: perplexity 1.6911 # samples 60000 
+2017-02-09 06:50:24,911 - __main__ - INFO - global step 71100 learning rate 0.5000 step-time 0.1093 perplexity 1.2452 gradient norm 1.1840
+2017-02-09 06:50:29,779 - __main__ - INFO - ==validation: perplexity 1.7508 # samples 60000 
+2017-02-09 06:51:01,861 - __main__ - INFO - global step 71400 learning rate 0.5000 step-time 0.1068 perplexity 1.2368 gradient norm 1.2048
+2017-02-09 06:51:06,788 - __main__ - INFO - ==validation: perplexity 1.7725 # samples 60000 
+2017-02-09 06:51:40,504 - __main__ - INFO - global step 71700 learning rate 0.5000 step-time 0.1122 perplexity 1.2451 gradient norm 1.2062
+2017-02-09 06:51:45,856 - __main__ - INFO - ==validation: perplexity 1.6361 # samples 60000 
+2017-02-09 06:52:17,892 - __main__ - INFO - global step 72000 learning rate 0.5000 step-time 0.1066 perplexity 1.2449 gradient norm 1.1882
+2017-02-09 06:52:23,483 - __main__ - INFO - ==validation: perplexity 1.7408 # samples 60000 
+2017-02-09 06:52:55,396 - __main__ - INFO - global step 72300 learning rate 0.5000 step-time 0.1062 perplexity 1.2296 gradient norm 1.1745
+2017-02-09 06:52:59,208 - __main__ - INFO - ==validation: perplexity 1.7447 # samples 60000 
+2017-02-09 06:53:31,985 - __main__ - INFO - global step 72600 learning rate 0.5000 step-time 0.1091 perplexity 1.2292 gradient norm 1.1567
+2017-02-09 06:53:37,609 - __main__ - INFO - ==validation: perplexity 1.7014 # samples 60000 
+2017-02-09 06:54:10,516 - __main__ - INFO - global step 72900 learning rate 0.5000 step-time 0.1095 perplexity 1.2446 gradient norm 1.2285
+2017-02-09 06:54:16,228 - __main__ - INFO - ==validation: perplexity 1.7554 # samples 60000 
+2017-02-09 06:54:49,047 - __main__ - INFO - global step 73200 learning rate 0.5000 step-time 0.1092 perplexity 1.2394 gradient norm 1.2235
+2017-02-09 06:54:53,822 - __main__ - INFO - ==validation: perplexity 1.6995 # samples 60000 
+2017-02-09 06:55:25,917 - __main__ - INFO - global step 73500 learning rate 0.5000 step-time 0.1068 perplexity 1.2239 gradient norm 1.1496
+2017-02-09 06:55:30,056 - __main__ - INFO - ==validation: perplexity 1.6986 # samples 60000 
+2017-02-09 06:56:02,349 - __main__ - INFO - global step 73800 learning rate 0.5000 step-time 0.1075 perplexity 1.2450 gradient norm 1.2273
+2017-02-09 06:56:07,780 - __main__ - INFO - ==validation: perplexity 1.7175 # samples 60000 
+2017-02-09 06:56:41,029 - __main__ - INFO - global step 74100 learning rate 0.5000 step-time 0.1107 perplexity 1.2403 gradient norm 1.1835
+2017-02-09 06:56:46,453 - __main__ - INFO - ==validation: perplexity 1.6778 # samples 60000 
+2017-02-09 06:57:18,355 - __main__ - INFO - global step 74400 learning rate 0.5000 step-time 0.1062 perplexity 1.2406 gradient norm 1.2075
+2017-02-09 06:57:22,401 - __main__ - INFO - ==validation: perplexity 1.7769 # samples 60000 
+2017-02-09 06:57:54,841 - __main__ - INFO - global step 74700 learning rate 0.5000 step-time 0.1080 perplexity 1.2358 gradient norm 1.1820
+2017-02-09 06:57:58,716 - __main__ - INFO - ==validation: perplexity 1.7579 # samples 60000 
+2017-02-09 06:58:31,302 - __main__ - INFO - global step 75000 learning rate 0.5000 step-time 0.1083 perplexity 1.2455 gradient norm 1.1991
+2017-02-09 06:58:37,600 - __main__ - INFO - ==validation: perplexity 1.7150 # samples 60000 
+2017-02-09 06:59:10,587 - __main__ - INFO - global step 75300 learning rate 0.5000 step-time 0.1098 perplexity 1.2452 gradient norm 1.2117
+2017-02-09 06:59:15,891 - __main__ - INFO - ==validation: perplexity 1.6972 # samples 60000 
+2017-02-09 06:59:48,048 - __main__ - INFO - global step 75600 learning rate 0.5000 step-time 0.1070 perplexity 1.2378 gradient norm 1.2038
+2017-02-09 06:59:52,856 - __main__ - INFO - ==validation: perplexity 1.6622 # samples 60000 
+2017-02-09 07:00:25,536 - __main__ - INFO - global step 75900 learning rate 0.5000 step-time 0.1087 perplexity 1.2367 gradient norm 1.1944
+2017-02-09 07:00:29,667 - __main__ - INFO - ==validation: perplexity 1.6938 # samples 60000 
+2017-02-09 07:01:02,128 - __main__ - INFO - global step 76200 learning rate 0.5000 step-time 0.1080 perplexity 1.2402 gradient norm 1.1927
+2017-02-09 07:01:08,394 - __main__ - INFO - ==validation: perplexity 1.7151 # samples 60000 
+2017-02-09 07:01:41,205 - __main__ - INFO - global step 76500 learning rate 0.5000 step-time 0.1092 perplexity 1.2457 gradient norm 1.2129
+2017-02-09 07:01:46,315 - __main__ - INFO - ==validation: perplexity 1.7218 # samples 60000 
+2017-02-09 07:02:19,473 - __main__ - INFO - global step 76800 learning rate 0.5000 step-time 0.1104 perplexity 1.2369 gradient norm 1.2166
+2017-02-09 07:02:24,925 - __main__ - INFO - ==validation: perplexity 1.7063 # samples 60000 
+2017-02-09 07:02:57,931 - __main__ - INFO - global step 77100 learning rate 0.5000 step-time 0.1098 perplexity 1.2450 gradient norm 1.2281
+2017-02-09 07:03:03,765 - __main__ - INFO - ==validation: perplexity 1.6392 # samples 60000 
+2017-02-09 07:03:36,263 - __main__ - INFO - global step 77400 learning rate 0.5000 step-time 0.1082 perplexity 1.2351 gradient norm 1.1740
+2017-02-09 07:03:40,705 - __main__ - INFO - ==validation: perplexity 1.6732 # samples 60000 
+2017-02-09 07:04:12,956 - __main__ - INFO - global step 77700 learning rate 0.5000 step-time 0.1073 perplexity 1.2359 gradient norm 1.1920
+2017-02-09 07:04:18,230 - __main__ - INFO - ==validation: perplexity 1.7312 # samples 60000 
+2017-02-09 07:04:50,579 - __main__ - INFO - global step 78000 learning rate 0.5000 step-time 0.1077 perplexity 1.2327 gradient norm 1.1842
+2017-02-09 07:04:54,687 - __main__ - INFO - ==validation: perplexity 1.7423 # samples 60000 
+2017-02-09 07:05:27,736 - __main__ - INFO - global step 78300 learning rate 0.5000 step-time 0.1099 perplexity 1.2361 gradient norm 1.1835
+2017-02-09 07:05:31,459 - __main__ - INFO - ==validation: perplexity 1.7170 # samples 60000 
+2017-02-09 07:06:04,373 - __main__ - INFO - global step 78600 learning rate 0.5000 step-time 0.1095 perplexity 1.2343 gradient norm 1.1757
+2017-02-09 07:06:09,134 - __main__ - INFO - ==validation: perplexity 1.7256 # samples 60000 
+2017-02-09 07:06:42,113 - __main__ - INFO - global step 78900 learning rate 0.5000 step-time 0.1098 perplexity 1.2260 gradient norm 1.1968
+2017-02-09 07:06:46,927 - __main__ - INFO - ==validation: perplexity 1.7133 # samples 60000 
+2017-02-09 07:07:19,605 - __main__ - INFO - global step 79200 learning rate 0.5000 step-time 0.1088 perplexity 1.2287 gradient norm 1.1810
+2017-02-09 07:07:24,762 - __main__ - INFO - ==validation: perplexity 1.7202 # samples 60000 
+2017-02-09 07:07:57,329 - __main__ - INFO - global step 79500 learning rate 0.5000 step-time 0.1084 perplexity 1.2262 gradient norm 1.1628
+2017-02-09 07:08:03,010 - __main__ - INFO - ==validation: perplexity 1.6877 # samples 60000 
+2017-02-09 07:08:35,008 - __main__ - INFO - global step 79800 learning rate 0.5000 step-time 0.1065 perplexity 1.2286 gradient norm 1.1804
+2017-02-09 07:08:41,070 - __main__ - INFO - ==validation: perplexity 1.7498 # samples 60000 
+2017-02-09 07:09:14,066 - __main__ - INFO - global step 80100 learning rate 0.5000 step-time 0.1098 perplexity 1.2270 gradient norm 1.2308
+2017-02-09 07:09:21,598 - __main__ - INFO - ==validation: perplexity 1.6950 # samples 60000 
+2017-02-09 07:09:54,697 - __main__ - INFO - global step 80400 learning rate 0.5000 step-time 0.1101 perplexity 1.2337 gradient norm 1.2307
+2017-02-09 07:10:00,274 - __main__ - INFO - ==validation: perplexity 1.6966 # samples 60000 
+2017-02-09 07:10:33,223 - __main__ - INFO - global step 80700 learning rate 0.5000 step-time 0.1097 perplexity 1.2326 gradient norm 1.2086
+2017-02-09 07:10:38,212 - __main__ - INFO - ==validation: perplexity 1.7181 # samples 60000 
+2017-02-09 07:11:10,895 - __main__ - INFO - global step 81000 learning rate 0.5000 step-time 0.1088 perplexity 1.2298 gradient norm 1.1997
+2017-02-09 07:11:16,145 - __main__ - INFO - ==validation: perplexity 1.6995 # samples 60000 
+2017-02-09 07:11:48,656 - __main__ - INFO - global step 81300 learning rate 0.5000 step-time 0.1082 perplexity 1.2395 gradient norm 1.2243
+2017-02-09 07:11:54,042 - __main__ - INFO - ==validation: perplexity 1.7235 # samples 60000 
+2017-02-09 07:12:27,049 - __main__ - INFO - global step 81600 learning rate 0.5000 step-time 0.1099 perplexity 1.2361 gradient norm 1.2498
+2017-02-09 07:12:31,484 - __main__ - INFO - ==validation: perplexity 1.7131 # samples 60000 
+2017-02-09 07:13:04,742 - __main__ - INFO - global step 81900 learning rate 0.5000 step-time 0.1106 perplexity 1.2319 gradient norm 1.2111
+2017-02-09 07:13:10,556 - __main__ - INFO - ==validation: perplexity 1.6698 # samples 60000 
+2017-02-09 07:13:43,091 - __main__ - INFO - global step 82200 learning rate 0.5000 step-time 0.1082 perplexity 1.2237 gradient norm 1.1879
+2017-02-09 07:13:46,917 - __main__ - INFO - ==validation: perplexity 1.6710 # samples 60000 
+2017-02-09 07:14:19,697 - __main__ - INFO - global step 82500 learning rate 0.5000 step-time 0.1091 perplexity 1.2330 gradient norm 1.2314
+2017-02-09 07:14:24,987 - __main__ - INFO - ==validation: perplexity 1.7011 # samples 60000 
+2017-02-09 07:14:57,864 - __main__ - INFO - global step 82800 learning rate 0.5000 step-time 0.1094 perplexity 1.2320 gradient norm 1.2067
+2017-02-09 07:15:02,934 - __main__ - INFO - ==validation: perplexity 1.7184 # samples 60000 
+2017-02-09 07:15:36,206 - __main__ - INFO - global step 83100 learning rate 0.5000 step-time 0.1107 perplexity 1.2321 gradient norm 1.1951
+2017-02-09 07:15:40,183 - __main__ - INFO - ==validation: perplexity 1.6973 # samples 60000 
+2017-02-09 07:16:12,828 - __main__ - INFO - global step 83400 learning rate 0.5000 step-time 0.1086 perplexity 1.2375 gradient norm 1.2270
+2017-02-09 07:16:16,754 - __main__ - INFO - ==validation: perplexity 1.7252 # samples 60000 
+2017-02-09 07:16:49,936 - __main__ - INFO - global step 83700 learning rate 0.5000 step-time 0.1105 perplexity 1.2343 gradient norm 1.2094
+2017-02-09 07:16:53,937 - __main__ - INFO - ==validation: perplexity 1.7384 # samples 60000 
+2017-02-09 07:17:28,884 - __main__ - INFO - global step 84000 learning rate 0.5000 step-time 0.1163 perplexity 1.2321 gradient norm 1.2389
+2017-02-09 07:17:33,754 - __main__ - INFO - ==validation: perplexity 1.7011 # samples 60000 
+2017-02-09 07:18:10,468 - __main__ - INFO - global step 84300 learning rate 0.5000 step-time 0.1222 perplexity 1.2284 gradient norm 1.2038
+2017-02-09 07:18:17,513 - __main__ - INFO - ==validation: perplexity 1.7396 # samples 60000 
+2017-02-09 07:18:50,478 - __main__ - INFO - global step 84600 learning rate 0.5000 step-time 0.1097 perplexity 1.2312 gradient norm 1.2416
+2017-02-09 07:18:55,650 - __main__ - INFO - ==validation: perplexity 1.7455 # samples 60000 
+2017-02-09 07:19:27,699 - __main__ - INFO - global step 84900 learning rate 0.5000 step-time 0.1066 perplexity 1.2265 gradient norm 1.1613
+2017-02-09 07:19:32,501 - __main__ - INFO - ==validation: perplexity 1.6915 # samples 60000 
+2017-02-09 07:20:05,166 - __main__ - INFO - global step 85200 learning rate 0.5000 step-time 0.1087 perplexity 1.2290 gradient norm 1.2046
+2017-02-09 07:20:09,593 - __main__ - INFO - ==validation: perplexity 1.7236 # samples 60000 
+2017-02-09 07:20:41,677 - __main__ - INFO - global step 85500 learning rate 0.5000 step-time 0.1068 perplexity 1.2237 gradient norm 1.2239
+2017-02-09 07:20:45,730 - __main__ - INFO - ==validation: perplexity 1.6826 # samples 60000 
+2017-02-09 07:21:18,080 - __main__ - INFO - global step 85800 learning rate 0.5000 step-time 0.1076 perplexity 1.2427 gradient norm 1.2340
+2017-02-09 07:21:25,146 - __main__ - INFO - ==validation: perplexity 1.7200 # samples 60000 
+2017-02-09 07:21:57,803 - __main__ - INFO - global step 86100 learning rate 0.5000 step-time 0.1087 perplexity 1.2388 gradient norm 1.2327
+2017-02-09 07:22:02,038 - __main__ - INFO - ==validation: perplexity 1.6883 # samples 60000 
+2017-02-09 07:22:37,076 - __main__ - INFO - global step 86400 learning rate 0.5000 step-time 0.1166 perplexity 1.2342 gradient norm 1.2187
+2017-02-09 07:22:41,532 - __main__ - INFO - ==validation: perplexity 1.7090 # samples 60000 
+2017-02-09 07:23:12,753 - __main__ - INFO - global step 86700 learning rate 0.5000 step-time 0.1039 perplexity 1.2225 gradient norm 1.2087
+2017-02-09 07:23:18,380 - __main__ - INFO - ==validation: perplexity 1.7734 # samples 60000 
+2017-02-09 07:23:53,684 - __main__ - INFO - global step 87000 learning rate 0.5000 step-time 0.1174 perplexity 1.2308 gradient norm 1.2224
+2017-02-09 07:23:59,647 - __main__ - INFO - ==validation: perplexity 1.7327 # samples 60000 
+2017-02-09 07:24:32,330 - __main__ - INFO - global step 87300 learning rate 0.5000 step-time 0.1088 perplexity 1.2285 gradient norm 1.2083
+2017-02-09 07:24:37,432 - __main__ - INFO - ==validation: perplexity 1.7341 # samples 60000 
+2017-02-09 07:25:13,585 - __main__ - INFO - global step 87600 learning rate 0.5000 step-time 0.1204 perplexity 1.2217 gradient norm 1.2041
+2017-02-09 07:25:19,188 - __main__ - INFO - ==validation: perplexity 1.7142 # samples 60000 
+2017-02-09 07:25:54,083 - __main__ - INFO - global step 87900 learning rate 0.5000 step-time 0.1161 perplexity 1.2317 gradient norm 1.1912
+2017-02-09 07:26:00,821 - __main__ - INFO - ==validation: perplexity 1.8076 # samples 60000 
+2017-02-09 07:26:34,707 - __main__ - INFO - global step 88200 learning rate 0.5000 step-time 0.1128 perplexity 1.2233 gradient norm 1.2146
+2017-02-09 07:26:38,963 - __main__ - INFO - ==validation: perplexity 1.7272 # samples 60000 
+2017-02-09 07:27:11,952 - __main__ - INFO - global step 88500 learning rate 0.5000 step-time 0.1098 perplexity 1.2235 gradient norm 1.1802
+2017-02-09 07:27:15,772 - __main__ - INFO - ==validation: perplexity 1.7960 # samples 60000 
+2017-02-09 07:27:48,989 - __main__ - INFO - global step 88800 learning rate 0.5000 step-time 0.1106 perplexity 1.2272 gradient norm 1.2445
+2017-02-09 07:27:53,870 - __main__ - INFO - ==validation: perplexity 1.7477 # samples 60000 
+2017-02-09 07:28:26,967 - __main__ - INFO - global step 89100 learning rate 0.5000 step-time 0.1101 perplexity 1.2299 gradient norm 1.2231
+2017-02-09 07:28:31,406 - __main__ - INFO - ==validation: perplexity 1.7859 # samples 60000 
+2017-02-09 07:29:05,734 - __main__ - INFO - global step 89400 learning rate 0.5000 step-time 0.1143 perplexity 1.2250 gradient norm 1.2152
+2017-02-09 07:29:10,674 - __main__ - INFO - ==validation: perplexity 1.7191 # samples 60000 
+2017-02-09 07:29:46,219 - __main__ - INFO - global step 89700 learning rate 0.5000 step-time 0.1183 perplexity 1.2193 gradient norm 1.2241
+2017-02-09 07:29:51,899 - __main__ - INFO - ==validation: perplexity 1.6920 # samples 60000 
+2017-02-09 07:30:23,934 - __main__ - INFO - global step 90000 learning rate 0.5000 step-time 0.1066 perplexity 1.2288 gradient norm 1.2005
+2017-02-09 07:30:29,363 - __main__ - INFO - ==validation: perplexity 1.6784 # samples 60000 
+2017-02-09 07:31:01,824 - __main__ - INFO - global step 90300 learning rate 0.5000 step-time 0.1080 perplexity 1.2252 gradient norm 1.2030
+2017-02-09 07:31:05,668 - __main__ - INFO - ==validation: perplexity 1.6788 # samples 60000 
+2017-02-09 07:31:38,571 - __main__ - INFO - global step 90600 learning rate 0.5000 step-time 0.1095 perplexity 1.2212 gradient norm 1.2144
+2017-02-09 07:31:42,451 - __main__ - INFO - ==validation: perplexity 1.7069 # samples 60000 
+2017-02-09 07:32:14,549 - __main__ - INFO - global step 90900 learning rate 0.5000 step-time 0.1068 perplexity 1.2258 gradient norm 1.2385
+2017-02-09 07:32:19,437 - __main__ - INFO - ==validation: perplexity 1.7642 # samples 60000 
+2017-02-09 07:32:51,980 - __main__ - INFO - global step 91200 learning rate 0.5000 step-time 0.1083 perplexity 1.2298 gradient norm 1.2282
+2017-02-09 07:32:56,065 - __main__ - INFO - ==validation: perplexity 1.7628 # samples 60000 
+2017-02-09 07:33:28,120 - __main__ - INFO - global step 91500 learning rate 0.5000 step-time 0.1067 perplexity 1.2246 gradient norm 1.1950
+2017-02-09 07:33:33,584 - __main__ - INFO - ==validation: perplexity 1.7188 # samples 60000 
+2017-02-09 07:34:06,688 - __main__ - INFO - global step 91800 learning rate 0.5000 step-time 0.1102 perplexity 1.2316 gradient norm 1.2545
+2017-02-09 07:34:11,835 - __main__ - INFO - ==validation: perplexity 1.6642 # samples 60000 
+2017-02-09 07:34:44,677 - __main__ - INFO - global step 92100 learning rate 0.5000 step-time 0.1093 perplexity 1.2225 gradient norm 1.2075
+2017-02-09 07:34:49,090 - __main__ - INFO - ==validation: perplexity 1.7402 # samples 60000 
+2017-02-09 07:35:21,576 - __main__ - INFO - global step 92400 learning rate 0.5000 step-time 0.1081 perplexity 1.2349 gradient norm 1.2610
+2017-02-09 07:35:26,629 - __main__ - INFO - ==validation: perplexity 1.7362 # samples 60000 
+2017-02-09 07:35:59,238 - __main__ - INFO - global step 92700 learning rate 0.5000 step-time 0.1085 perplexity 1.2262 gradient norm 1.2453
+2017-02-09 07:36:04,205 - __main__ - INFO - ==validation: perplexity 1.7566 # samples 60000 
+2017-02-09 07:36:39,185 - __main__ - INFO - global step 93000 learning rate 0.5000 step-time 0.1164 perplexity 1.2198 gradient norm 1.2488
+2017-02-09 07:36:43,682 - __main__ - INFO - ==validation: perplexity 1.7739 # samples 60000 
+2017-02-09 07:37:16,129 - __main__ - INFO - global step 93300 learning rate 0.5000 step-time 0.1080 perplexity 1.2228 gradient norm 1.2359
+2017-02-09 07:37:20,947 - __main__ - INFO - ==validation: perplexity 1.6917 # samples 60000 
+2017-02-09 07:37:53,695 - __main__ - INFO - global step 93600 learning rate 0.5000 step-time 0.1090 perplexity 1.2211 gradient norm 1.2073
+2017-02-09 07:37:57,222 - __main__ - INFO - ==validation: perplexity 1.7130 # samples 60000 
+2017-02-09 07:38:30,417 - __main__ - INFO - global step 93900 learning rate 0.5000 step-time 0.1105 perplexity 1.2254 gradient norm 1.2381
+2017-02-09 07:38:35,179 - __main__ - INFO - ==validation: perplexity 1.7657 # samples 60000 
+2017-02-09 07:39:07,738 - __main__ - INFO - global step 94200 learning rate 0.5000 step-time 0.1084 perplexity 1.2255 gradient norm 1.2324
+2017-02-09 07:39:12,521 - __main__ - INFO - ==validation: perplexity 1.7351 # samples 60000 
+2017-02-09 07:39:45,455 - __main__ - INFO - global step 94500 learning rate 0.5000 step-time 0.1096 perplexity 1.2251 gradient norm 1.2255
+2017-02-09 07:39:51,457 - __main__ - INFO - ==validation: perplexity 1.6760 # samples 60000 
+2017-02-09 07:40:23,467 - __main__ - INFO - global step 94800 learning rate 0.5000 step-time 0.1065 perplexity 1.2243 gradient norm 1.2369
+2017-02-09 07:40:29,803 - __main__ - INFO - ==validation: perplexity 1.6792 # samples 60000 
+2017-02-09 07:41:03,225 - __main__ - INFO - global step 95100 learning rate 0.5000 step-time 0.1113 perplexity 1.2225 gradient norm 1.1827
+2017-02-09 07:41:08,617 - __main__ - INFO - ==validation: perplexity 1.7459 # samples 60000 
+2017-02-09 07:41:40,870 - __main__ - INFO - global step 95400 learning rate 0.5000 step-time 0.1073 perplexity 1.2209 gradient norm 1.2011
+2017-02-09 07:41:44,683 - __main__ - INFO - ==validation: perplexity 1.7557 # samples 60000 
+2017-02-09 07:42:19,817 - __main__ - INFO - global step 95700 learning rate 0.5000 step-time 0.1169 perplexity 1.2308 gradient norm 1.2613
+2017-02-09 07:42:23,823 - __main__ - INFO - ==validation: perplexity 1.7428 # samples 60000 
+2017-02-09 07:43:00,337 - __main__ - INFO - global step 96000 learning rate 0.5000 step-time 0.1215 perplexity 1.2245 gradient norm 1.2709
+2017-02-09 07:43:07,252 - __main__ - INFO - ==validation: perplexity 1.7406 # samples 60000 
+2017-02-09 07:43:40,877 - __main__ - INFO - global step 96300 learning rate 0.5000 step-time 0.1119 perplexity 1.2290 gradient norm 1.2520
+2017-02-09 07:43:45,188 - __main__ - INFO - ==validation: perplexity 1.7263 # samples 60000 
+2017-02-09 07:44:17,341 - __main__ - INFO - global step 96600 learning rate 0.5000 step-time 0.1070 perplexity 1.2215 gradient norm 1.2527
+2017-02-09 07:44:21,721 - __main__ - INFO - ==validation: perplexity 1.7725 # samples 60000 
+2017-02-09 07:44:54,790 - __main__ - INFO - global step 96900 learning rate 0.5000 step-time 0.1101 perplexity 1.2263 gradient norm 1.2722
+2017-02-09 07:44:59,332 - __main__ - INFO - ==validation: perplexity 1.7458 # samples 60000 
+2017-02-09 07:45:31,833 - __main__ - INFO - global step 97200 learning rate 0.5000 step-time 0.1082 perplexity 1.2176 gradient norm 1.1987
+2017-02-09 07:45:37,343 - __main__ - INFO - ==validation: perplexity 1.7147 # samples 60000 
+2017-02-09 07:46:10,267 - __main__ - INFO - global step 97500 learning rate 0.5000 step-time 0.1096 perplexity 1.2335 gradient norm 1.2578
+2017-02-09 07:46:13,811 - __main__ - INFO - ==validation: perplexity 1.7684 # samples 60000 
+2017-02-09 07:46:48,241 - __main__ - INFO - global step 97800 learning rate 0.5000 step-time 0.1145 perplexity 1.2202 gradient norm 1.2010
+2017-02-09 07:46:54,740 - __main__ - INFO - ==validation: perplexity 1.7387 # samples 60000 
+2017-02-09 07:47:29,572 - __main__ - INFO - global step 98100 learning rate 0.5000 step-time 0.1159 perplexity 1.2221 gradient norm 1.2254
+2017-02-09 07:47:34,426 - __main__ - INFO - ==validation: perplexity 1.7117 # samples 60000 
+2017-02-09 07:48:09,924 - __main__ - INFO - global step 98400 learning rate 0.5000 step-time 0.1182 perplexity 1.2258 gradient norm 1.2580
+2017-02-09 07:48:14,806 - __main__ - INFO - ==validation: perplexity 1.7142 # samples 60000 
+2017-02-09 07:48:47,230 - __main__ - INFO - global step 98700 learning rate 0.5000 step-time 0.1079 perplexity 1.2184 gradient norm 1.2074
+2017-02-09 07:48:52,598 - __main__ - INFO - ==validation: perplexity 1.7376 # samples 60000 
+2017-02-09 07:49:24,737 - __main__ - INFO - global step 99000 learning rate 0.5000 step-time 0.1069 perplexity 1.2162 gradient norm 1.1979
+2017-02-09 07:49:30,142 - __main__ - INFO - ==validation: perplexity 1.7071 # samples 60000 
+2017-02-09 07:50:02,603 - __main__ - INFO - global step 99300 learning rate 0.5000 step-time 0.1081 perplexity 1.2236 gradient norm 1.2573
+2017-02-09 07:50:06,444 - __main__ - INFO - ==validation: perplexity 1.7645 # samples 60000 
+2017-02-09 07:50:43,886 - __main__ - INFO - global step 99600 learning rate 0.5000 step-time 0.1246 perplexity 1.2213 gradient norm 1.2089
+2017-02-09 07:50:47,871 - __main__ - INFO - ==validation: perplexity 1.7283 # samples 60000 
+2017-02-09 07:51:22,327 - __main__ - INFO - global step 99900 learning rate 0.5000 step-time 0.1146 perplexity 1.2195 gradient norm 1.2557
+2017-02-09 07:51:27,430 - __main__ - INFO - ==validation: perplexity 1.7146 # samples 60000 
+2017-02-09 07:51:39,675 - __main__ - INFO - =================================best validation perplexity: 1.6286 

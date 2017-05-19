@@ -1,0 +1,2 @@
+model_checkpoint_path: "rel2vec_best.ckpt-33600"
+all_model_checkpoint_paths: "rel2vec_best.ckpt-33600"
