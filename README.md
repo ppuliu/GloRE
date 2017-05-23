@@ -1,5 +1,5 @@
 ## Global Relation Embedding for Relation Extraction (GloRE)
-GloRE is a relation embedding model that can be used to augment existing relation extraction models and significantly improve their performance. Most remarkably, for the top 1,000 relational facts discovered by the best existing model, the precision can be improved from 83.9% to 89.3%.
+GloRE is a relation embedding model that can be used to augment existing relation extraction models and significantly improve their performance. Most remarkably, for the top 1,000 relational facts discovered by the best existing model (PCNN+ATT), the precision can be improved from 83.9% to 89.3%.
 
 ## Prerequisite
 * Python 2.7
@@ -23,7 +23,7 @@ We use the NYT dataset as an example to show how to use our model to improve **a
 
 We've provided the following pre-processed files in [`data`](https://github.com/ppuliu/GloRE/tree/master/data):
 
-* *data.train.gz / data.valid.gz* : training and validation files in the format of 
+* *data.train.gz / data.valid.gz* : training and validation files that are in the format of 
     ```
     textual relation [tab] KB relation [tab] weight
     ```
@@ -78,7 +78,7 @@ By default, this command will run through the following 4 steps:
 2. Extract GloRE scores
     You can run this step alone with
     ```
-    python steps.py --steps 2
+    python steps.py --steps 2 --model_dir your_model_directory
     ```
     OR
     ```bash
@@ -87,7 +87,7 @@ By default, this command will run through the following 4 steps:
 3. Train a merging model to combine GloRE scores with external scores
     You can run this step alone with
     ```
-    python steps.py --steps 3
+    python steps.py --steps 3 --model_dir your_model_directory
     ```
     OR
     ```bash
@@ -96,7 +96,7 @@ By default, this command will run through the following 4 steps:
 3. Generate final scores and Precision-Recall files
     You can run this step alone with
     ```
-    python steps.py --steps 4
+    python steps.py --steps 4 --model_dir your_model_directory
     ```
     OR
     ```bash
@@ -110,7 +110,7 @@ python scripts/interactive_rel2vec.py your_model_directory
 ```
 
 ## Configuration
-All the hyper-parameters can be changed by modifying files in [`scripts`](https://github.com/ppuliu/GloRE/tree/master/scripts).
+All the hyperparameters can be changed by modifying files in [`scripts`](https://github.com/ppuliu/GloRE/tree/master/scripts).
 
 ## Cite
 If you use the code in your research, please cite the following paper:
