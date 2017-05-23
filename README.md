@@ -1,5 +1,5 @@
 ## Global Relation Embedding for Relation Extraction (GloRE)
-GloRE is a relation embedding model that can be used to augment existing relation extraction models and significantly improve their performance. Most remarkably, for the top 1,000 relational facts discovered by the best existing model (PCNN+ATT), the precision can be improved from 83.9% to 89.3%.
+GloRE is a relation embedding model that can be used to augment existing relation extraction models and improve their performance. Most remarkably, for the top 1,000 relational facts discovered by the best existing model (PCNN+ATT), the precision can be improved from 83.9% to 89.3%.
 
 ## Prerequisite
 * Python 2.7
@@ -19,9 +19,9 @@ python steps.py --steps 2,4 --model_dir runs/pretrained_model/
 ```
 
 ## Data
-We use the NYT dataset as an example to show how to use our model to improve **any** existing relation extraction tool. The original NYT dataset can be downloaded from http://iesl.cs.umass.edu/riedel/ecml/ or https://github.com/thunlp/NRE.
+We use the NYT dataset as an example to show how to use our model to improve existing relation extraction models. The original NYT dataset can be downloaded from http://iesl.cs.umass.edu/riedel/ecml/ or https://github.com/thunlp/NRE.
 
-We've provided the following pre-processed files in [`data`](https://github.com/ppuliu/GloRE/tree/master/data):
+We provide the following pre-processed files in [`data`](https://github.com/ppuliu/GloRE/tree/master/data):
 
 * *data.train.gz / data.valid.gz* : training and validation files that are in the format of 
     ```
@@ -41,25 +41,26 @@ We've provided the following pre-processed files in [`data`](https://github.com/
     entity1 [tab] entity2
     textual relaiton id (line number)
     one-hot encoding for the corresponding KB relation
-    scores of each KB relation generated from the existing relation extraction tool
+    scores of each KB relation generated from the existing relation extraction model
     ```
     As an example,
     ```
     #
     m.010016        m.0492jkz
     542694
-    1       0       0       0       0       0       0       0       0       0       0       0       0       0       0
+    1      0       0       0       0       0       0       0       0       0       0       0       0       0       0
            0       0       0       0       0       0       0       0       0       0       0       0       0       0
            0       0       0       0       0       0       0       0       0       0       0       0       0       0
            0       0       0       0       0       0       0       0       0       0
-    0.999106        0.000001        0.000000        0.000000        0.000000        0.000000        0.000054        0.000000        0.000001        0.000002        0.000000        0.000000        0.000001        0.000003        0.000000        0.000000        0.000000        0.000007        0.000002        0.000000        0.000000        0.000000
-            0.000000        0.000004        0.000001        0.000000        0.000000        0.000000        0.000000
-            0.000003        0.000000        0.000000        0.000000        0.000003        0.000000        0.000001
-            0.000001        0.000003        0.000000        0.000000        0.000000        0.000000        0.000000
-            0.000001        0.000000        0.000001        0.000000        0.000001        0.000443        0.000002
-            0.000351        0.000000        0.000000
+    0.999106        0.000001        0.000000        0.000000        0.000000        0.000000        0.000054        0.000000                        0.000001        0.000002        0.000000        0.000000        0.000001        0.000003        0.000000        0.000000                  0.000000        0.000007        0.000002        0.000000        0.000000        0.000000
+           0.000000        0.000004        0.000001        0.000000        0.000000        0.000000        0.000000
+           0.000003        0.000000        0.000000        0.000000        0.000003        0.000000        0.000001
+           0.000001        0.000003        0.000000        0.000000        0.000000        0.000000        0.000000
+           0.000001        0.000000        0.000001        0.000000        0.000001        0.000443        0.000002
+           0.000351        0.000000        0.000000
     #
     ```
+    
 ## Step-by-Step
 To run the training and testing all together, it can be as simple as
 ```bash
@@ -108,7 +109,7 @@ By default, this command will run through the following 4 steps:
     ```
     The Precision-Recall files will be located in `your_model_directory/output`
     
-We also provide some scripts that allow you to interactively explore the trained GloRE model. Given a textual relation, you can check GloRE's predictions of KB relations with
+We also provide some scripts for interactively exploring the trained GloRE model. Given a textual relation, you can check GloRE's predictions of KB relations with
 ```bash
 python scripts/interactive_rel2vec.py your_model_directory
 ```
