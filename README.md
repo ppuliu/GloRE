@@ -1,4 +1,5 @@
 ## Global Relation Embedding for Relation Extraction (GloRE)
+GloRE is a relation embedding model that can be used to augment existing relation extraction models and significantly improve their performance. Most remarkably, for the top 1,000 relational facts discovered by the best existing model, the precision can be improved from 83.9% to 89.3%.
 
 ## Prerequisite
 * Python 2.7
@@ -18,7 +19,7 @@ python steps.py --steps 2,4 --model_dir runs/pretrained_model/
 ```
 
 ## Data
-We use the NYT dataset as an example to show how to use our model to improve **any** existing relation extraction tools. The original NYT dataset can be downloaded from http://iesl.cs.umass.edu/riedel/ecml/ or https://github.com/thunlp/NRE.
+We use the NYT dataset as an example to show how to use our model to improve **any** existing relation extraction tool. The original NYT dataset can be downloaded from http://iesl.cs.umass.edu/riedel/ecml/ or https://github.com/thunlp/NRE.
 
 We've provided the following pre-processed files in [`data`](https://github.com/ppuliu/GloRE/tree/master/data):
 
@@ -59,3 +60,49 @@ We've provided the following pre-processed files in [`data`](https://github.com/
             0.000351        0.000000        0.000000
     #
     ```
+## Step-by-Step
+To run the training and testing all together, it can be as simple as
+```bash
+python steps.py
+```
+By default, this command will run through the following 4 steps:
+1. Train a GloRE model
+    You can run this step alone with
+    ```
+    python steps.py --steps 1
+    ```
+    OR
+    ```bash
+    python scripts/train_rel2vec.py your_model_directory
+    ```
+2. Extract GloRE scores
+    You can run this step alone with
+    ```
+    python steps.py --steps 2
+    ```
+    OR
+    ```bash
+    python scripts/test_rel2vec.py your_model_directory
+    ```
+3. Train a merging model to combine GloRE scores with external scores
+    You can run this step alone with
+    ```
+    python steps.py --steps 3
+    ```
+    OR
+    ```bash
+    python scripts/train_mlp.py your_model_directory
+    ```
+3. Generate final scores and Precision-Recall files
+    You can run this step alone with
+    ```
+    python steps.py --steps 4
+    ```
+    OR
+    ```bash
+    python scripts/test_mlp.py your_model_directory
+    ```
+    The Precision-Recall files will be located in `your_model_directory/output`
+    
+    
+
