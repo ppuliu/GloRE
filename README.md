@@ -67,6 +67,7 @@ python steps.py
 ```
 By default, this command will run through the following 4 steps:
 1. Train a GloRE model
+    
     You can run this step alone with
     ```
     python steps.py --steps 1
@@ -76,6 +77,7 @@ By default, this command will run through the following 4 steps:
     python scripts/train_rel2vec.py your_model_directory
     ```
 2. Extract GloRE scores
+    
     You can run this step alone with
     ```
     python steps.py --steps 2 --model_dir your_model_directory
@@ -85,6 +87,7 @@ By default, this command will run through the following 4 steps:
     python scripts/test_rel2vec.py your_model_directory
     ```
 3. Train a merging model to combine GloRE scores with external scores
+    
     You can run this step alone with
     ```
     python steps.py --steps 3 --model_dir your_model_directory
@@ -94,6 +97,7 @@ By default, this command will run through the following 4 steps:
     python scripts/train_mlp.py your_model_directory
     ```
 3. Generate final scores and Precision-Recall files
+    
     You can run this step alone with
     ```
     python steps.py --steps 4 --model_dir your_model_directory
