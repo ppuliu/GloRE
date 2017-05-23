@@ -104,5 +104,16 @@ By default, this command will run through the following 4 steps:
     ```
     The Precision-Recall files will be located in `your_model_directory/output`
     
-    
+We also provide some scripts that allow you to interactively explore the trained GloRE model. Given a textual relation, you can check GloRE's predictions of KB relations with
+```bash
+python scripts/interactive_rel2vec.py your_model_directory
+```
 
+## Configuration
+All the hyper-parameters can be changed by modifying files in [`scripts`](https://github.com/ppuliu/GloRE/tree/master/scripts).
+
+## Cite
+If you use the code in your research, please cite the following paper:
+>**Global Relation Embedding for Relation Extraction**  
+>Yu Su, Honglei Liu, Semih Yavuz, Izzeddin Gur, Huan Sun, and Xifeng Yan  
+>arXiv preprint arXiv:1704.05958 (2017)
