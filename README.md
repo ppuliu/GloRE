@@ -40,7 +40,7 @@ We provide the following pre-processed files in [`data`](https://github.com/ppul
     #
     entity1 [tab] entity2
     textual relaiton id (line number)
-    one-hot encoding for the corresponding KB relation
+    binary encoding for the KB relation labels
     scores of each KB relation generated from the existing relation extraction model
     ```
     As an example,
