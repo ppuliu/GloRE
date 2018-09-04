@@ -5,6 +5,20 @@ GloRE is a relation embedding model that can be used to augment existing relatio
 * Python 2.7
 * Tensorflow 0.11
 
+## Install Tensorflow 0.11
+
+(GPU support)
+```
+export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.11.0-cp27-none-linux_x86_64.whl
+pip install --ignore-installed --upgrade $TF_BINARY_URL
+```
+
+(CPU only)
+```
+export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.11.0-cp27-none-linux_x86_64.whl
+pip install --ignore-installed --upgrade $TF_BINARY_URL
+```
+
 ## Results
 The result files from held-out and manual evaluations are included in [`results`](https://github.com/ppuliu/GloRE/tree/master/results). To reproduce the figures and tables in the paper, simply follow the IPython notebook:
 
